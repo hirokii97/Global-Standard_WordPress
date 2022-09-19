@@ -177,6 +177,7 @@ a {
 .c-post-card {
 	border-bottom: #DDDDDD 1px solid;
 	padding-bottom: 32px;
+	display: block;
 }
 
 .c-post-card:nth-child(n+2) {
@@ -1058,7 +1059,6 @@ news
 ======================== */
 
 .news {
-	padding-bottom: 160px;
 	padding-top: 166px;
 }
 
@@ -1085,6 +1085,10 @@ news
 	max-width: 768px;
 	padding: 60px 40px 40px 40px;
 	width: 100%;
+}
+
+.news__wrapper{
+padding-bottom: 160px;
 }
 
 /* ========================
@@ -3258,6 +3262,10 @@ footer {
 .news-top {
 	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-news_sp.png) no-repeat center/cover;
 }
+
+.news__wrapper{
+	padding-bottom: 100px;
+	}
 
 .news__page {
 	display: block;

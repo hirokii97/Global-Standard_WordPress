@@ -188,29 +188,33 @@
                 </div></a></div>
           </div>
           <div class="p-news__contents">
+
+          <?php if (have_posts()): ?>
+            
             <div class="p-news__cards">
-              <div class="p-news__card c-post-card">
-                <div class="p-news__sub_card c-post-sub-card">
-                  <div class="p-news__card-tag c-post-card-tag">営業時間</div>
-                  <div class="p-news__card-date c-post-card-date">2021.07.20 </div>
+
+              <?php while(have_posts()):
+                the_post();
+                ?>
+
+            <a class="p-news__card c-post-card">
+              <div class="p-news__sub_card c-post-sub-card">
+                <!-- カテゴリー -->
+                  <?php 
+                    $category = get_the_category();
+                    if($category[0]){
+                      echo '<div class="p-news__card-tag c-post-card-tag">' . $category[0]->cat_name . '</div>';
+                    }
+                  ?>
+                  <!-- 公開日時を動的に表示する -->
+                  <time class="p-news__card-date c-post-card-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
                 </div>
-                <div class="p-news__card-title c-post-card-title">お盆期間中の営業について</div>
-              </div>
-              <div class="p-news__card c-post-card">
-                <div class="p-news__sub_card c-post-sub-card">
-                  <div class="p-news__card-tag c-post-card-tag">その他</div>
-                  <div class="p-news__card-date c-post-card-date">2021.06.01 </div>
-                </div>
-                <div class="p-news__card-title c-post-card-title">新型コロナウイルス対策ご協力のお願い</div>
-              </div>
-              <div class="p-news__card c-post-card">
-                <div class="p-news__sub_card c-post-sub-card">
-                  <div class="p-news__card-tag c-post-card-tag">その他</div>
-                  <div class="p-news__card-date c-post-card-date">2021.05.01 </div>
-                </div>
-                <div class="p-news__card-title c-post-card-title">オンライン英会話スクール「グッドイングリッシュオンライン株式会社」との業務提携について</div>
-              </div>
-            </div>
+                <div class="p-news__card-title c-post-card-title"><?php the_title(); ?></div>
+                  </a>
+          
+            <?php endwhile; ?>  
+            <?php endif; ?>
+
           </div>
           <div class="l-view-more-box"> 
             <div class="l-view-more-sp c-view-more"><a class="c-view-more-link">
@@ -220,6 +224,7 @@
                 </div></a></div>
           </div>
         </div>
+
       </div>
     </div>
 
