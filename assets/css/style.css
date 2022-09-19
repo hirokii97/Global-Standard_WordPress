@@ -717,6 +717,7 @@ header {
 }
 
 footer {
+	margin-top: 160px;
 	width: 100%;
 }
 
@@ -1911,20 +1912,16 @@ header-top修正
 ページネーション
 ======================== */
 
-.news__page__pageNation {
-	margin-bottom: 180px;
-	margin-top: 60px;
-}
 
-.news__page__pageNation__numberBox {
+.news__page__pageNation {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
+	margin: 60px auto 180px auto ;
 	max-width: 422px;
 	width: 100%;
 }
 
-.news__page__pageNation__btn {
+.page-numbers {
 	background-color: #F8F8F8;
 	height: 50px;
 	padding: 13px 20px;
@@ -1932,28 +1929,43 @@ header-top修正
 	width: 50px;
 }
 
-.news__page__pageNation__btn.active {
+.page-numbers.current {
 	background-color: #163F74;
 	color: #FFF;
 }
 
-.pageNation_arrow {
+.next.page-numbers{
 	text-align: center;
 }
 
-.pageNation_arrow img {
+.next.page-numbers img{
+	height: 13px;
+	transform: translateY(-50%);
+	width: 7.5px;
+}
+.prev.page-numbers img{
 	height: 13px;
 	transform: translateY(-50%);
 	width: 7.5px;
 }
 
-.pageNation_prev {
+/* .pageNation_arrow {
+	text-align: center;
+} */
+
+/* .pageNation_arrow img {
+	height: 13px;
+	transform: translateY(-50%);
+	width: 7.5px;
+} */
+
+/* .pageNation_prev {
 	margin-right: 12px;
 }
 
 .pageNation_next {
 	margin-left: 12px;
-}
+} */
 
 .sidebar {
 	margin-top: 80px;
@@ -2005,6 +2017,8 @@ header-top修正
 .sidebar__category__title {
 	font-size: 20px;
 	font-weight: 700;
+	border-bottom: #DDDDDD 1px solid;
+	padding-bottom: 16px;
 }
 
 .sidebar__category__box {

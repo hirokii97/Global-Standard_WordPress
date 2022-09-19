@@ -30,7 +30,7 @@
 
           <?php while(have_posts()): the_post(); ?>
             
-            <div class="news__page__content">
+            <a class="news__page__content" href=" <?php the_permalink() ?> ">
             <div class="news__page__content__image">
             
             <?php  
@@ -53,25 +53,78 @@
                 } 
                 
                 ?>
-                <div class="news__content__bar__new c-new-mark">NEW</div>
+
+                <?php 
+                
+                  $post_time = get_the_time('U');
+                  $days = 1; //New!を表示させる日数
+                  $last = time() - ($days * 24 * 60 * 60);
+
+                  if ($post_time > $last) {
+                  echo '<div class="news__content__bar__new c-new-mark">NEW</div>';
+                  }
+                
+
+                  // $the_query = new WP_Query(array(
+                  //   // 何かループに条件をつけたければ書く
+                  //   'cat' => 1,
+                  //   'posts_per_page' => 10
+                  // ));
+                  // while($the_query->have_posts()) : $the_query->the_post();
+                  //   if ($the_query->current_post < 4) {
+                  //     echo '<div class="news__content__bar__new c-new-mark">NEW</div>';
+                  //   }
+                  // endwhile;
+                ?>
+
                 <time class="news__content__bar__date c-front-new-mark c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
               </div>
               <div class="news__page__content__title"><?php the_title(); ?></div>
             </div>
-          </div>
+          </a>
+
+          
+          <?php endwhile; ?>
+          
+
+         <?php if(paginate_links()):?>
 
           <div class="news__page__pageNation">
-            <div class="news__page__pageNation__numberBox"><a class="news__page__pageNation__btn pageNation_arrow pageNation_prev"><img src="../assets/img/icon-chevron-left.png"></a><a class="news__page__pageNation__btn">1</a><a class="news__page__pageNation__btn active">2</a><a class="news__page__pageNation__btn">3</a><a class="news__page__pageNation__btn">4</a><a class="news__page__pageNation__btn">5</a><a class="news__page__pageNation__btn pageNation_arrow pageNation_next"> <img src="../assets/img/icon-chevron-right.png"></a></div>
+
+            <?php 
+
+              echo paginate_links(
+                  array(
+                    'end_size' => 0,
+                    'mid_size' => 1,
+                    'prev_next' => true,
+                    'prev_text' => '<img src="'.  get_template_directory_uri() . '/assets/img/icon-chevron-left.png">',
+                    'next_text' => '<img src="'.  get_template_directory_uri() . '/assets/img/icon-chevron-right.png">',
+                  ));
+
+            ?>
+              <?php endif; ?>
+              
+            <!-- <div class="news__page__pageNation__numberBox">
+              <a class="news__page__pageNation__btn pageNation_arrow pageNation_prev"><img src="../assets/img/icon-chevron-left.png"></a>
+                <a class="news__page__pageNation__btn">1</a>
+                <a class="news__page__pageNation__btn active">2</a>
+                <a class="news__page__pageNation__btn">3</a>
+                <a class="news__page__pageNation__btn">4</a>
+                <a class="news__page__pageNation__btn">5</a>
+                <a class="news__page__pageNation__btn pageNation_arrow pageNation_next"><img src="../assets/img/icon-chevron-right.png"></a>
+            </div> -->
+
           </div>
 
-          <?php endwhile; ?>
-        
         </div>
         
         <?php endif; ?>
         
       </div>
+
       <?php get_sidebar(); ?>
+    
     </div>
 
     <?php get_footer() ;?>
