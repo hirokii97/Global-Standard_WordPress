@@ -41,6 +41,7 @@
                 echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
               }
             ?>
+            
           </div>
             <div class="news__page__content__about">
               <div class="news__page__content__bar">

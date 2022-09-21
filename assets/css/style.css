@@ -1177,7 +1177,7 @@ case-study
 	margin-top: 13px;
 }
 
-.header-breadcrumbs-home {
+.header-breadcrumbs .home{
 	color: #888888;
 }
 
@@ -2114,43 +2114,41 @@ header-top修正
 	margin-top: 40px;
 }
 
-.news__post__content__title.news__post__h2 {
+.news__post__contents h2 {
 	background: #F8F8F8;
 	border-left: #163F74 6px solid;
 	font-size: 20px;
 	padding: 7px 0px 7px 20px;
+	color: #163F74;
+	font-weight: 700;
+	margin-top: 40px;
 }
 
-.news__post__content__title.news__post__h3 {
+.news__post__contents h3 {
 	border-bottom: #163F74 1px solid;
 	font-size: 18px;
+	color: #163F74;
+	font-weight: 700;
+	margin-top: 40px;
 }
 
-.news__post__content__title.news__post__h4 {
+.news__post__contents h4 {
 	border-bottom: #163F74 1px solid;
+	color: #163F74;
+	font-weight: 700;
+	margin-top: 40px;
 }
 
-.news__post__content__sentence {
+.news__post__contents p{
 	font-size: 14px;
-}
-
-.news__post__content__sentence.news__post__h2 {
 	margin-top: 20px;
 }
 
-.news__post__content__sentence.news__post__h3 {
-	margin-top: 20px;
-}
-
-.news__post__content__sentence.news__post__h4 {
-	margin-top: 16px;
-}
-
-.news__post__content__list {
+.news__post__contents ul {
 	margin-left: 40px;
 }
 
-.news__post__content__quote {
+.wp-block-quote {
 	background: #F8F8F8;
 	border-left: #163F74 4px solid;
 	font-size: 14px;
@@ -2163,7 +2161,7 @@ header-top修正
 	z-index: 10;
 }
 
-.news__post__content__quote::after {
+.wp-block-quote::after {
 	background: url(../img/quote.png) center center/cover;
 	content: "";
 	display: block;
@@ -2175,7 +2173,7 @@ header-top修正
 	z-index: -1;
 }
 
-.news__post__content__quote__sentence {
+.wp-block-quote p {
 	margin: 0 auto;
 	max-width: 576px;
 	width: 100%;
