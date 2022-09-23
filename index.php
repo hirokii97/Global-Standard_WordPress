@@ -136,32 +136,60 @@
                 </div></a></div>
           </div>
           <div class="case-study__contents">
-            <div class="case-study__cards"><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case01.png" alt=""></div>
-                <div class="case-study__card-name">AAA株式会社 様</div>
-                <div class="case-study__card-tag">ビジネス英語研修</div>
-                <div class="case-study__card-more"></div></a><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case02.png" alt=""></div>
-                <div class="case-study__card-name">合同会社BBB 様</div>
-                <div class="case-study__card-tag">異文化コミュニケーション</div>
-                <div class="case-study__card-more"></div></a><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case03.png" alt=""></div>
-                <div class="case-study__card-name">株式会社CCC 様</div>
-                <div class="case-study__card-tag">ビジネス留学プログラム</div>
-                <div class="case-study__card-more"></div></a><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case04.png" alt=""></div>
-                <div class="case-study__card-name">DDD株式会社 様</div>
-                <div class="case-study__card-tag">異文化コミュニケーション</div>
-                <div class="case-study__card-more"></div></a><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case05.png" alt=""></div>
-                <div class="case-study__card-name">EEE株式会社 様</div>
-                <div class="case-study__card-tag">ビジネス留学プログラム</div>
-                <div class="case-study__card-more"></div></a><a class="case-study__card">
-                <div class="case-study__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-case06.png" alt=""></div>
-                <div class="case-study__card-name">FFF株式会社 様</div>
-                <div class="case-study__card-tag">ビジネス英語研修</div>
-                <div class="case-study__card-more"></div></a>
+            <div class="case-study__cards">
+
+              <?php 
+              
+              $args = array(
+                'post_type' => 'work',//カスタム投稿のslug CPT UI（プラグイン）で設定済み
+                'posts_per_page' => -1 //表示件数（-1で全ての記事を表示）
+                );
+              
+                $the_query = get_posts( $args );
+                if ( $the_query ) :
+                foreach ( $the_query as $post ) : setup_postdata( $post );
+              
+              ?>
+            
+              <a class="case-study__card">
+
+                <div class="case-study__card-img">
+                  <!-- アイキャッチ画像 -->
+                  <?php if(has_post_thumbnail()){
+                    the_post_thumbnail('large');
+                  } else {
+                    echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                  } ?> 
+                </div>
+
+                <!-- 会社名 -->
+                <div class="case-study__card-name">
+                <?php if( get_field( 'company' )):?>
+                <?php the_field( 'company' ); ?>
+                <?php endif; ?>
+                  様
+                </div>
+                
+                <!-- 研修コース -->
+                <div class="case-study__card-tag">
+                <?php if( get_field( 'course' )):?>
+                <?php the_field( 'course' ); ?>
+                <?php endif; ?>
+                
+              </div>
+
+                <div class="case-study__card-more"></div>
+              </a>
+
+              <?php 
+              endforeach;
+              wp_reset_postdata();
+              endif;
+              ?>
+              
             </div>
+
+
             <div class="l-view-more-box case-study__view-more">
               <div class="l-view-more-sp c-view-more"><a class="c-view-more-link">
                   <div class="c-view-more-sentence-type1 c-english-title">View more</div>
@@ -189,14 +217,15 @@
           </div>
           <div class="p-news__contents">
 
-          <?php if (have_posts()): ?>
-            
-            <div class="p-news__cards">
+            <?php if (have_posts()): ?>
+              
+
+              <div class="p-news__cards">
 
               <?php while(have_posts()):
-                the_post();
-                ?>
-
+            the_post();
+            ?>
+              
             <a class="p-news__card c-post-card">
               <div class="p-news__sub_card c-post-sub-card">
                 <!-- カテゴリー -->

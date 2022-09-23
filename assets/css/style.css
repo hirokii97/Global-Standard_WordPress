@@ -41,6 +41,8 @@ figure {
 
 html {
 	line-height: 1;
+	scroll-behavior: smooth;
+	scroll-padding-top: 140px;
 }
 
 ol,
@@ -2541,8 +2543,7 @@ header-top修正
 }
 
 html {
-	scroll-behavior: smooth;
-	scroll-padding-top: 100px;
+
 }
 
 @media screen and (min-width: 1104px) {
@@ -3527,7 +3528,7 @@ footer {
 }
 
 html {
-	scroll-padding-top: 60px;
+	scroll-padding-top: 140px;
 }
 
 }
