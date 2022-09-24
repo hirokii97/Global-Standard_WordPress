@@ -156,7 +156,7 @@
                 <div class="case-study__card-img">
                   <!-- アイキャッチ画像 -->
                   <?php if(has_post_thumbnail()){
-                    the_post_thumbnail('large');
+                    the_post_thumbnail('small');
                   } else {
                     echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
                   } ?> 
