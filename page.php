@@ -169,7 +169,7 @@
           <div class="about__member__title">役員紹介</div>
 
           
-          <!-- 研修コース（タクソノミー）別で記事を表示（ループ） -->
+          <!-- 役員（カスタム投稿）別で記事を表示（ループ） -->
           <?php 
             $args = array(
               'post_type' => 'officer',//役員紹介のpost-type
