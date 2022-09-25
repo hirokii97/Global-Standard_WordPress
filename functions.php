@@ -73,3 +73,5 @@ add_action('init', 'my_menu_init');
   return $title;
  };
  add_filter('get_the_archive_title', 'my_archive_title');
+
+
