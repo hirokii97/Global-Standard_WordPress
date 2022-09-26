@@ -24,6 +24,13 @@
         <div class="download__page__detail__sentence">急速にグローバルに活躍できる企業が生き残る時代と移り変わりました。 ビジネス英語や経営学を効率よく学びながら、世界各国から集まるビジネスパーソンと交流し、世界レベルでの人脈を構築する研修をご用意しております。 <br><br>英語に苦手意識のある方でもご安心ください。 ビジネスで必要なコミュニケーションが取れるようになるまで実績豊富な講師陣がサポートいたします。 まずはこちらの資料をごらんください。</div>
       </div>
 
+
+      <div class="download__page__apply">
+        <form class="download__page__apply__form c-form" id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKls0LPq9U7Q1I2Ef3eYspg8HJlMCEApTPtbquv1wd-380wg/formResponse">
+          <?php echo do_shortcode('[contact-form-7 id="177" title="資料ダウンロード"]') ?>
+        </form>
+      </div>
+
     </div>
 
 

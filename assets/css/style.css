@@ -309,6 +309,15 @@ a {
 	width: 100%;
 }
 
+/* contact form7 「資料をダウンロードする」のCSS（追加） */
+.wpcf7-submit{
+	font-weight: 700;
+	font-size: 16px;
+	font-family: "Noto Sans JP", sans-serif;
+	transition: all 0.5s 0s ease;
+	
+}
+
 .c-apply-btn:hover {
 	background-color: #163F74;
 	color: #FFFFFF;
@@ -557,7 +566,8 @@ textarea::placeholder {
 	width: 13px; /* 透明にしておく */
 }
 
-/* チェックが入ったときの□ */
+
+/* チェックが入ったときの□  */ 
 
 .my-checkbox input:checked + .checkmark {
 	background: #FFF; /* チェック時の色 */
@@ -568,6 +578,10 @@ textarea::placeholder {
 
 .my-checkbox input:checked + .checkmark:after {
 	opacity: 1; /* 透明を解除 */
+}
+
+.wpcf7-form-control-wrap{
+position: inherit;
 }
 
 header {
