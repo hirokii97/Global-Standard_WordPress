@@ -52,61 +52,61 @@ jQuery(".service__question-card").on("click", function(){
 
 
 //資料ダウンロード完了メッセージ
-jQuery(document).ready(function () {
+// jQuery(document).ready(function () {
   
-  jQuery('#form').submit(function (event) {
-    var formData = jQuery('#form').serialize();
-    jQuery.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKls0LPq9U7Q1I2Ef3eYspg8HJlMCEApTPtbquv1wd-380wg/formResponse",
-      data: formData,
-      type: "POST",
-      dataType: "xml",
-      statusCode: {
-        0: function () {
-          jQuery(".download__page__apply__form__afterSend").slideDown();
-          jQuery(".c-form__wrapper").fadeOut();
-          jQuery('html,body').animate({scrollTop:jQuery('#form').position().top})
-          //window.location.href = "thanks.html";
-        },
-        // 200: function () {
-        //   jQuery(".false-message").slideDown();
-        // }
-      }
-    });
-    event.preventDefault();
-  });
+//   jQuery('#form').submit(function (event) {
+//     var formData = jQuery('#form').serialize();
+//     jQuery.ajax({
+//       url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKls0LPq9U7Q1I2Ef3eYspg8HJlMCEApTPtbquv1wd-380wg/formResponse",
+//       data: formData,
+//       type: "POST",
+//       dataType: "xml",
+//       statusCode: {
+//         0: function () {
+//           jQuery(".download__page__apply__form__afterSend").slideDown();
+//           jQuery(".c-form__wrapper").fadeOut();
+//           jQuery('html,body').animate({scrollTop:jQuery('#form').position().top})
+//           //window.location.href = "thanks.html";
+//         },
+//         // 200: function () {
+//         //   jQuery(".false-message").slideDown();
+//         // }
+//       }
+//     });
+//     event.preventDefault();
+//   });
 
-});
+// });
 
 
-//お問い合わせ完了メッセージ
-jQuery(document).ready(function () {
+// //お問い合わせ完了メッセージ
+// jQuery(document).ready(function () {
 
-  jQuery('#form').submit(function (event) {
-    var formData = jQuery('#form').serialize();
-    jQuery.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeczX8zlGmozQRuF7nC3DOBJMcKGd-U8OpLTiVnoDBg99BZZQ/formResponse",
-      data: formData,
-      type: "POST",
-      dataType: "xml",
-      statusCode: {
-        0: function () {
-          jQuery(".contact__page__apply__form__afterSend").slideDown();
-          jQuery(".contact__sended").slideDown();
-          jQuery(".c-form__wrapper").fadeOut();
-          jQuery(".contact__page__detail ").fadeOut();
-          jQuery('html,body').animate({scrollTop:jQuery('.header').position().top})
-          //window.location.href = "thanks.html";
-        },
-        // 200: function () {
-        //   jQuery(".false-message").slideDown();
-        // }
-      }
-    });
-    event.preventDefault();
-  });
+//   jQuery('#form').submit(function (event) {
+//     var formData = jQuery('#form').serialize();
+//     jQuery.ajax({
+//       url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeczX8zlGmozQRuF7nC3DOBJMcKGd-U8OpLTiVnoDBg99BZZQ/formResponse",
+//       data: formData,
+//       type: "POST",
+//       dataType: "xml",
+//       statusCode: {
+//         0: function () {
+//           jQuery(".contact__page__apply__form__afterSend").slideDown();
+//           jQuery(".contact__sended").slideDown();
+//           jQuery(".c-form__wrapper").fadeOut();
+//           jQuery(".contact__page__detail ").fadeOut();
+//           jQuery('html,body').animate({scrollTop:jQuery('.header').position().top})
+//           //window.location.href = "thanks.html";
+//         },
+//         // 200: function () {
+//         //   jQuery(".false-message").slideDown();
+//         // }
+//       }
+//     });
+//     event.preventDefault();
+//   });
 
-});
+// });
 
 
 //selectが requiredじゃない場合はjQueryを使う↓

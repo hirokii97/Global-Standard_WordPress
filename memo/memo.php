@@ -62,3 +62,64 @@
 
 
             <?php endwhile; wp_reset_postdata(); endif; endforeach;  ?>
+
+
+
+            <!-- contactForm -->
+
+            <div class="c-form__wrapper">
+            <div class="download__page__apply__form__title c-form__title">資料ダウンロード</div>
+            <div class="download__form__content c-form__content">
+              <div class="download__form__content__tag c-form__content__tag">会社名</div>
+              <div class="download__form__content__box c-form__content__box">
+                [text text-company placeholder "例）○○株式会社"]
+              </div>
+            </div>
+            <div class="download__form__content c-form__content">
+              <div class="download__form__content__tag c-form__content__tag">部署</div>
+              <div class="download__form__content__box c-form__content__box"> 
+                [text text-team placeholder "例）人事部"]
+              </div>
+            </div>
+            <div class="download__form__content c-form__content">
+              <div class="download__form__content__tag c-form__content__tag">お名前</div>
+              <div class="download__form__content__tag__requiredTag c-form__content__requiredTag">必須</div>
+              <div class="download__form__content__box c-form__content__box"> 
+                [text* your-name placeholder "例）鈴木　一郎" ]
+              </div>
+            </div>
+            <div class="download__form__content c-form__content">
+              <div class="download__form__content__tag c-form__content__tag">お名前（フリガナ）</div>
+              <div class="download__form__content__tag__requiredTag c-form__content__requiredTag">必須</div>
+              <div class="download__form__content__box c-form__content__box"> 
+                [text* your-subname placeholder "例）スズキ　イチロウ" ]
+
+              </div>
+            </div>
+            <div class="download__form__content c-form__content">
+              <div class="download__form__content__tag c-form__content__tag">メールアドレス</div>
+              <div class="download__form__content__tag__requiredTag c-form__content__requiredTag">必須</div>
+              <div class="download__form__content__box c-form__content__box"> 
+                [email* your-email placeholder "例）info@example.com"]
+              </div>
+            </div>
+            <div class="download__page__apply__form__check c-form__check">
+
+[checkbox checkbox-374 ""]
+
+             <a class="download__page__apply__form__check c-form__check__detail">個人情報保護方針</a>
+              <div class="download__page__apply__form__check c-form__check__sentence">に同意します。</div>
+            </div>
+            <div class="download__page__apply__form__check c-form__sendBtn">
+
+　　　　　　　[submit class:c-apply-btn class:c-apply-sendBtn " 資料をダウンロードする "]
+
+            </div>
+          </div>
+          <!--送信後メッセージ-->
+          <div class="download__page__apply__form__afterSend">
+            <div class="download__page__apply__form__afterSend__title">資料請求いただき<br> ありがとうございました！</div>
+            <p class="download__page__apply__form__afterSend__sentence">資料は以下のリンクよりダウンロードください。<br><br></p>
+            <p class="download__page__apply__form__afterSend__sentenceArrow">→ </p><a class="download__page__apply__form__afterSend__sentenceLink">資料のダウンロードリンクはこちら<br><br></a>
+            <p class="download__page__apply__form__afterSend__sentence">また、ご入力いただいたメールアドレスの方へもダウンロードリンクを送付しておりますので、ご確認いただけますと幸いです。</p>
+          </div>
