@@ -7,7 +7,7 @@
                 <p class="order-box-main-title c-english-title">DOWNLOAD</p>
                 <p class="order-box-sub-title">資料ダウンロード</p>
               </div>
-              <div class="order-box"><a class="btn-view-more c-english-title">View more</a></div>
+              <div class="order-box"><a class="btn-view-more c-english-title" href="<?php echo home_url('/download'); ?>">View more</a></div>
             </div>
           </div>
           <div class="footer__contact-box order-box-type">
@@ -16,7 +16,7 @@
                 <p class="order-box-main-title c-english-title">CONTACT</p>
                 <p class="order-box-sub-title">お問い合わせ</p>
               </div>
-              <div class="order-box"><a class="btn-view-more c-english-title">View more</a></div>
+              <div class="order-box"><a class="btn-view-more c-english-title" href="<?php echo home_url('/contact'); ?>">View more</a></div>
             </div>
           </div>
         </div>

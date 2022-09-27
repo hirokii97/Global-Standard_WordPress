@@ -96,7 +96,7 @@
 
                   </div>
                 </div>
-              </div><a class="service__card-apply c-apply-btn">お申し込みはこちら</a>
+              </div><a class="service__card-apply c-apply-btn" href="<?php echo home_url('/contact'); ?>">お申し込みはこちら</a>
             </div>
           </div>
 
