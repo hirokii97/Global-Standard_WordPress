@@ -1,0 +1,67 @@
+/* ========================
+チェックボックス(アレンジ)
+======================== */
+
+.wpcf7-list-item{
+  position: relative;
+  }
+  
+  .wpcf7-form-control-wrap {
+    position: relative;
+    display: block;
+  
+  }
+  
+  span.wpcf7-list-item {
+    /* margin: 0 30px 0 0;  */
+    position: relative;
+  }
+  
+  .wpcf7-list-item-label {
+    cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
+    font-size: 16px; /*項目のフォントサイズ*/
+  }
+  
+  input[type="checkbox"] {
+    cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
+    opacity: 0;
+    position: relative;
+    margin: 0;
+    margin-right: 10px;
+    z-index: 10;
+    width: 32px;
+    height: 21px;
+  
+  }
+  
+  /* チェックが入ったときの□  */ 
+  .wpcf7-list-item-label::before {
+    border: solid 1px #3E3E3E; /* 線 */
+    box-sizing: border-box;
+    height: 32px; /* 上からの位置 */
+    left: 0;
+    position: absolute;
+    top: 0; /* 大きさ */
+    width: 32px;
+  }
+  
+  /* チェックが入ったときの✓ */
+  input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
+    border: solid #163F74;
+    background-color: transparent;
+    border-width: 0 2px 2px 0;
+    content: ""; /* チェックの大きさ */
+    height: 24px;
+    left: 9px;
+    position: absolute; /* チェックの位置 */
+    top: -1%;
+    transform: rotate(45deg); /* チェックの位置 */
+    width: 13px; /* 透明にしておく */
+  }
+  
+  input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
+    /*チェックしたボックスの背景色を設定*/
+    background: #FFF; /* チェック時の色 */
+    border-color: #2e80ff; /* チェック時の色 */
+  }
+  
