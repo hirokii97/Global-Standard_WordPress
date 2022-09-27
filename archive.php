@@ -55,15 +55,19 @@
                 
                 ?>
 
-                <?php 
+              <div class="news__content__bar__new c-new-mark">
+              
+              <?php 
                 
                   $post_time = get_the_time('U');
                   $days = 1; //New!を表示させる日数
                   $last = time() - ($days * 24 * 60 * 60);
 
                   if ($post_time > $last) {
-                  echo '<div class="news__content__bar__new c-new-mark">NEW</div>';
+                  echo 'NEW';
                   }
+
+                  
                 
 
                   // $the_query = new WP_Query(array(
@@ -77,6 +81,7 @@
                   //   }
                   // endwhile;
                 ?>
+                </div>
 
                 <time class="news__content__bar__date c-front-new-mark c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
               </div>
@@ -104,19 +109,10 @@
                   ));
 
             ?>
-              <?php endif; ?>
               
-            <!-- <div class="news__page__pageNation__numberBox">
-              <a class="news__page__pageNation__btn pageNation_arrow pageNation_prev"><img src="../assets/img/icon-chevron-left.png"></a>
-                <a class="news__page__pageNation__btn">1</a>
-                <a class="news__page__pageNation__btn active">2</a>
-                <a class="news__page__pageNation__btn">3</a>
-                <a class="news__page__pageNation__btn">4</a>
-                <a class="news__page__pageNation__btn">5</a>
-                <a class="news__page__pageNation__btn pageNation_arrow pageNation_next"><img src="../assets/img/icon-chevron-right.png"></a>
-            </div> -->
+            </div>
 
-          </div>
+            <?php endif; ?>
 
         </div>
         

@@ -53,6 +53,63 @@
 
               <?php the_content(); ?>
 
+                <?php if( get_field( 'course' )): ?>
+                  <!-- 研修コース名 -->
+                  <div class="caseStudy__page__content__card__course-item courseName">
+                    <?php the_field( 'course' ); ?>
+                  </div>
+                <?php endif; ?>
+
+                <!--研修の目的-->
+              <?php if( get_field( 'purpose' )): ?>
+                <div class="caseStudy__page__content__card__item">
+                  <div class="caseStudy__page__content__card__item-title">
+                    <div class="caseStudy__page__content__card__item-titleMark"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-check.png' " alt=""></div>
+                    <div class="caseStudy__page__content__card__item-titleName">研修の目的</div>
+                  </div>
+                  <div class="caseStudy__page__content__card__item-sentence">
+
+                  <?php the_field( 'purpose' ); ?>
+                  
+                  </div>
+                </div>
+              <?php endif; ?>
+
+              <!--選んだ理由-->
+
+              <?php if( get_field( 'reason' )): ?>
+                  <div class="caseStudy__page__content__card__item">
+                  <div class="caseStudy__page__content__card__item-title">
+                    <div class="caseStudy__page__content__card__item-titleMark"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-check.png' " alt=""></div>
+                    <div class="caseStudy__page__content__card__item-titleName">選んだ理由</div>
+                  </div>
+                  <div class="caseStudy__page__content__card__item-sentence">
+
+                  <?php the_field( 'reason' ); ?>
+                  
+                </div>
+              </div>
+              <?php endif; ?>
+
+
+
+                <!--導入後の成果・効果-->
+                <?php if( get_field( 'result' )): ?>
+                
+                  <div class="caseStudy__page__content__card__item">
+                  <div class="caseStudy__page__content__card__item-title">
+                    <div class="caseStudy__page__content__card__item-titleMark"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-check.png' " alt=""></div>
+                    <div class="caseStudy__page__content__card__item-titleName">導入後の成果・効果</div>
+                  </div>
+                  <div class="caseStudy__page__content__card__item-sentence">
+
+                  <?php the_field( 'result' ); ?>
+                  
+                </div>
+              </div>
+
+              <?php endif; ?>
+              
           <div class="news__post__content__pageNation">
 
               <?php 

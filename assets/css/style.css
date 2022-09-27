@@ -2589,6 +2589,8 @@ html {
 .header__inner {
 	align-items: center;
 	display: flex;
+	/* adminヘッダー調整 */
+	top: 46px;
 }
 
 .header__nav {

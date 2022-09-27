@@ -43,7 +43,7 @@
               <div class="l-main-title c-title c-english-title">ABOUT US</div>
               <div class="l-sub-title c-sub-title">当社について</div>
             </div>
-            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/page-about'); ?>">
+            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/about'); ?>">
                 <div class="c-view-more-sentence-type1 c-english-title">View more</div>
                 <div class="c-view-more-arrow-box-type1">
                   <div class="c-view-more-arrow-type1"></div>
@@ -58,7 +58,7 @@
       <div class="about__sub-content"> 
         <div class="about__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-company.png" alt=""></div>
         <div class="l-view-more-box">
-          <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/page-about'); ?>">
+          <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/about'); ?>">
               <div class="c-view-more-sentence-type1 c-english-title">View more</div>
               <div class="c-view-more-arrow-box-type1">
                 <div class="c-view-more-arrow-type1"></div>
@@ -142,7 +142,7 @@
               
               $args = array(
                 'post_type' => 'work',//カスタム投稿のslug CPT UI（プラグイン）で設定済み
-                'posts_per_page' => -1 //表示件数（-1で全ての記事を表示）
+                'posts_per_page' => 6 //表示件数（-1で全ての記事を表示）
                 );
               
                 $the_query = get_posts( $args );
@@ -151,7 +151,7 @@
               
               ?>
             
-              <a class="case-study__card">
+              <a class="case-study__card" href="<?php the_permalink(); ?>">
 
                 <div class="case-study__card-img">
                   <!-- アイキャッチ画像 -->
@@ -217,16 +217,26 @@
           </div>
           <div class="p-news__contents">
 
-            <?php if (have_posts()): ?>
+            <?php 
+            
+            $args = array(
+              'post_type' => 'post',//導入事例のpost-type
+              'posts_per_page' => 3,
+              'no_found_rows' => true,
+              );
+              $query = new WP_Query($args);
+              ?>
+
+            <?php if ($query->have_posts()): ?>
               
 
               <div class="p-news__cards">
 
-              <?php while(have_posts()):
-            the_post();
+              <?php while($query->have_posts()):
+            $query->the_post();
             ?>
               
-            <a class="p-news__card c-post-card">
+            <a class="p-news__card c-post-card" href="<?php the_permalink();?>">
               <div class="p-news__sub_card c-post-sub-card">
                 <!-- カテゴリー -->
                   <?php 
@@ -243,6 +253,7 @@
           
             <?php endwhile; ?>  
             <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
 
           </div>
           <div class="l-view-more-box"> 
