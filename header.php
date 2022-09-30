@@ -50,12 +50,5 @@
                )
                )
                ?>
-
-      <!-- <div class="header-drawer-nav">
-        <div class="header-drawer-wrapper">
-          <a class="header__list list" href="./index.html">トップ</a>
-          <a class="header__list list" href="./about/index.html">当社について</a>
-          <a class="header__list list" href="./service/index.html">サービス</a><a class="header__list list" href="./results/index.html">導入事例</a><a class="header__list list" href="./news/index.html">お知らせ</a><a class="download__btn c-white-btn btn">資料ダウンロード</a><a class="contact__btn c-blue-btn btn">お問い合わせ</a>
-        </div>
-      </div> -->
+ 
     </header>

@@ -589,7 +589,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
 
 header {
 	background: #FFF;
-	height: 100px;
+	/* height: 100px; */
 }
 
 .header__inner {
@@ -695,7 +695,19 @@ header {
 	display: flex;
 	flex-direction: column;
 	padding: 60px 40px;
+	padding: 60px 40px 0px 40px;
+	
 	text-align: center;
+}
+
+.header-drawer-wrapper li{
+	color: #FFF;
+	margin-top: 40px;
+}
+
+.header-drawer-wrapper li:nth-child(1){
+	margin-top: 0px;
+
 }
 
 .header-drawer-wrapper .header__list {
@@ -1177,6 +1189,7 @@ case-study
 .p-header__top {
 	height: 250px;
 	width: 100%;
+	margin-top: 68px;
 }
 
 .p-header__top__wrapper {
@@ -2561,7 +2574,6 @@ header-top修正
 }
 
 html {
-
 }
 
 @media screen and (min-width: 1104px) {
@@ -2787,7 +2799,7 @@ textarea {
 }
 
 header {
-	height: 60px;
+	/* height: 60px; */
 }
 
 .header__inner {
@@ -2990,6 +3002,10 @@ footer {
 
 .case-study__card-name {
 	margin-top: 12px;
+}
+
+.p-header__top{
+	margin-top: 44.8px;
 }
 
 .p-header__top__wrapper {
@@ -3546,8 +3562,7 @@ footer {
 }
 
 html {
-	scroll-padding-top: 60px;
-}
+	scroll-padding-top: 60px;}
 
 }
 

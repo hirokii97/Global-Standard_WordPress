@@ -209,7 +209,7 @@
               <div class="l-main-title c-title c-english-title">NEWS</div>
               <div class="l-sub-title c-sub-title">新着情報</div>
             </div>
-            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/work'); ?>">
+            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/blog'); ?>">
                 <div class="c-view-more-sentence-type2 c-english-title">View more</div>
                 <div class="c-view-more-arrow-box-type2">
                   <div class="c-view-more-arrow-type2"></div>
@@ -256,13 +256,14 @@
             <?php wp_reset_postdata(); ?>
 
           </div>
-          <div class="l-view-more-box"> 
-            <div class="l-view-more-sp c-view-more"><a class="c-view-more-link">
-                <div class="c-view-more-sentence-type2 c-english-title">View more</div>
-                <div class="c-view-more-arrow-box-type2">
-                  <div class="c-view-more-arrow-type2"></div>
-                </div></a></div>
-          </div>
+        </div>
+        <div class="l-view-more-box"> 
+          <div class="l-view-more-sp c-view-more">
+            <a class="c-view-more-link" href="<?php echo home_url('/blog');?>">
+              <div class="c-view-more-sentence-type2 c-english-title">View more</div>
+              <div class="c-view-more-arrow-box-type2">
+                <div class="c-view-more-arrow-type2"></div>
+              </div></a></div>
         </div>
 
       </div>
