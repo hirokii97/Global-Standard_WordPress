@@ -42,7 +42,7 @@ figure {
 html {
 	line-height: 1;
 	scroll-behavior: smooth;
-	scroll-padding-top: 140px;
+	scroll-padding-top: 100px;
 }
 
 ol,
@@ -600,6 +600,7 @@ header {
 	margin: 0 auto;
 	padding: 16px;
 	position: fixed;
+	top: 0;
 	width: 100%;
 	z-index: 100;
 }
@@ -2589,8 +2590,6 @@ html {
 .header__inner {
 	align-items: center;
 	display: flex;
-	/* adminヘッダー調整 */
-	top: 46px;
 }
 
 .header__nav {
@@ -2960,7 +2959,7 @@ footer {
 }
 
 .news {
-	padding-bottom: 110px;
+	/* padding-bottom: 110px; */
 	padding-top: 60px;
 }
 
@@ -3547,7 +3546,7 @@ footer {
 }
 
 html {
-	scroll-padding-top: 140px;
+	scroll-padding-top: 60px;
 }
 
 }
