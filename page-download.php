@@ -26,11 +26,11 @@
 
 
       <div class="download__page__apply">
-        <form class="download__page__apply__form c-form" id="form" action="">
+        <!-- <form class="download__page__apply__form c-form" id="form" action=""> -->
           	
         <?php the_content(); ?>
 
-        </form>
+        <!-- </form> -->
       </div>
 
     </div>

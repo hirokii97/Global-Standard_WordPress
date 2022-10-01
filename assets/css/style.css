@@ -484,22 +484,27 @@ textarea::placeholder {
 }
 
 .c-form__check {
+	text-align: center;
 	align-items: center;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	/* justify-content: space-between; */
 	margin: 40px auto 0px auto;
-	max-width: 300px;
+	/* max-width: 300px; */
 	width: 100%;
 }
 
-.c-form__check__checkbox {
-	height: 32px;
+/* デフォルト */
+input[type="checkbox"] {
+	cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
+	/* opacity: 0; */
+	position: relative;
+	margin: 0;
+	margin-right: 10px;
+	z-index: 20;
 	width: 32px;
-}
-
-.c-form__check__checkbox input {
 	height: 32px;
-	width: 32px;
+	background-color: transparent;
 }
 
 .c-form__check__detail {
@@ -517,72 +522,7 @@ textarea::placeholder {
 	height: 0;
 }
 
-/* ========================
-チェックボックス(アレンジ)
-======================== */
 
-.wpcf7-list-item{
-position: relative;
-}
-
-.wpcf7-form-control-wrap {
-	position: relative;
-  display: block;
-
-}
-
-span.wpcf7-list-item {
-  /* margin: 0 30px 0 0;  */
-  position: relative;
-}
-
-.wpcf7-list-item-label {
-  cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
-  font-size: 16px; /*項目のフォントサイズ*/
-}
-
-input[type="checkbox"] {
-	cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
-  opacity: 0;
-  position: relative;
-	margin: 0;
-	margin-right: 10px;
-	z-index: 10;
-	width: 32px;
-	height: 21px;
-
-}
-
-/* チェックが入ったときの□  */ 
-.wpcf7-list-item-label::before {
-	border: solid 1px #3E3E3E; /* 線 */
-	box-sizing: border-box;
-	height: 32px; /* 上からの位置 */
-	left: 0;
-	position: absolute;
-	top: 0; /* 大きさ */
-	width: 32px;
-}
-
-/* チェックが入ったときの✓ */
-input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
-	border: solid #163F74;
-	background-color: transparent;
-	border-width: 0 2px 2px 0;
-	content: ""; /* チェックの大きさ */
-	height: 24px;
-	left: 9px;
-	position: absolute; /* チェックの位置 */
-	top: -1%;
-	transform: rotate(45deg); /* チェックの位置 */
-	width: 13px; /* 透明にしておく */
-}
-
-input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
-  /*チェックしたボックスの背景色を設定*/
-	background: #FFF; /* チェック時の色 */
-	border-color: #2e80ff; /* チェック時の色 */
-}
 
 
 
@@ -2472,6 +2412,13 @@ header-top修正
 	padding: 40px;
 }
 
+/* 資料ダウンロードのformデザイン */
+.download__page .wpcf7-form{
+	background-color: #EDF3F8;
+	border-radius: 12px;
+	padding: 40px;
+}
+
 .download__page__apply__form__title {
 	font-size: 32px;
 }
@@ -2544,6 +2491,7 @@ header-top修正
 .contact__form__content__tag__requiredTag {
 	margin-left: 6px;
 }
+
 
 /* ========================
 送信後メッセージ

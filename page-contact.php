@@ -22,7 +22,7 @@
       <div class="contact__page__detail">研修のお申し込み、その他お問い合わせは、下記のフォームからお問い合わせ内容をご記入ください。<br> 2日以内に担当者からメールにてご連絡いたします。 </div>
       <div class="contact__page__apply">
 
-        <form class="contact__page__apply__form c-form" id="form" action="">
+        <!-- <form class="contact__page__apply__form c-form" id="form" action=""> -->
           
           <?php the_content(); ?>
 
@@ -31,7 +31,7 @@
             <p class="contact__page__apply__form__afterSend__sentence">お問い合わせありがとうございました。<br> 2日以内に担当者からメールにてご連絡いたしますので、しばらくお待ちいただけますと幸いです。</p>
             <p class="contact__page__apply__form__afterSend__sentenceArrow">→ </p><a class="contact__page__apply__form__afterSend__sentenceLink">トップへ戻る<br><br></a>
           </div>
-        </form>
+        <!-- </form> -->
       </div>
     </div>
 
