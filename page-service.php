@@ -41,7 +41,7 @@
           <?php if($query->have_posts()):  ?> 
           <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-          <div class="service__main__section">
+          <div class="service__main__section" id="<?php the_ID();?>">
             <div class="service__section__card">
               <div class="service__card-title-section">
 

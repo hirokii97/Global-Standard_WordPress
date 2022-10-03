@@ -175,14 +175,29 @@ get_header(); ?>
             </div>
 
             <?php endwhile;?>
-            <?php wp_reset_postdata(); ?>
             <?php endif; ?>
-            <?php endforeach; ?>
+            <?php wp_reset_postdata(); ?>
             
           </div>
           
-          <a class="caseStudy__page__btn c-apply-btn"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
-          
+          <?php 
+            $args = array(
+              'post_type' => 'service',//役員紹介のpost-type
+              'term' => 'slug',
+              'posts_per_page' => -1,
+              'no_found_rows' => true,
+              );
+              $course_query = new WP_Query($args); ?>
+
+            <?php if($course_query->have_posts()): $course_query->the_post(); ?> 
+            
+
+          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $query->post->ID;?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
+          <?php wp_reset_postdata(); ?>
+
+
+          <?php endif; ?>
+          <?php endforeach; ?>
         </div>
         <?php endforeach; ?>
 

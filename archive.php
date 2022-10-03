@@ -59,27 +59,19 @@
               
               <?php 
                 
-                  $post_time = get_the_time('U');
-                  $days = 1; //New!を表示させる日数
-                  $last = time() - ($days * 24 * 60 * 60);
+                  // $post_time = get_the_time('U');
+                  // $days = 1; //New!を表示させる日数
+                  // $last = time() - ($days * 24 * 60 * 60);
 
-                  if ($post_time > $last) {
-                  echo 'NEW';
-                  }
+                  // if ($post_time > $last) {
+                  // echo 'NEW';
+                  // }
 
-                  
-                
-
-                  // $the_query = new WP_Query(array(
-                  //   // 何かループに条件をつけたければ書く
-                  //   'cat' => 1,
-                  //   'posts_per_page' => 10
-                  // ));
-                  // while($the_query->have_posts()) : $the_query->the_post();
-                  //   if ($the_query->current_post < 4) {
-                  //     echo '<div class="news__content__bar__new c-new-mark">NEW</div>';
-                  //   }
-                  // endwhile;
+                  $limit = 2;
+                  $num = $wp_query->current_post;
+                  if ( $limit > $num ):
+                    echo 'New';
+                  endif;
                 ?>
                 </div>
 
