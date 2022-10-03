@@ -74,7 +74,9 @@ add_action('init', 'my_menu_init');
  };
  add_filter('get_the_archive_title', 'my_archive_title');
 
-// 投稿のアーカイブページを作成する
+
+
+ // 投稿のアーカイブページを作成する
 function post_has_archive($args, $post_type)
 {
     if ('post' == $post_type) {
@@ -84,3 +86,77 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+
+
+
+//投稿・固定ページ管理画面の記事一覧テーブルにIDカラムを作成
+add_filter( 'manage_posts_columns', 'customize_admin_manage_posts_columns' );//投稿
+add_filter( 'manage_pages_columns', 'customize_admin_manage_posts_columns' );//固定ページ
+function customize_admin_manage_posts_columns($columns) {
+  //投稿ID
+  $columns['post-id'] = 'ID';
+
+  return $columns;
+}
+
+//投稿・固定ページ管理画面の記事一覧テーブルにIDを表示
+add_action( 'manage_posts_custom_column', 'customize_admin_add_column', 10, 2 );//投稿
+add_action( 'manage_pages_custom_column', 'customize_admin_add_column', 10, 2 );//固定ページ
+function customize_admin_add_column($column_name, $post_id) {
+  //投稿ID
+  if ( 'post-id' === $column_name ) {
+    $thum = $post_id;
+  }
+  if ( isset($thum) && $thum ) {
+    echo $thum;
+  }
+}
+
+//投稿・固定ページ管理画面の記事一覧テーブルにIDソートを可能にする
+add_filter( 'manage_edit-post_sortable_columns', 'sort_term_columns' );//投稿
+add_filter( 'manage_edit-page_sortable_columns', 'sort_term_columns' );//固定ページ
+function sort_term_columns($columns) {
+  $columns['post-id'] = 'ID';
+  return $columns;
+}
+
+add_action( 'wp_footer', 'add_thanks_page' );
+function add_thanks_page() {
+
+//資料ダウンロード完了
+if( get_the_ID() == '179' ) {//投稿ID
+echo <<< EOD
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'https://wpwork.hiroooo.com/downloadthank/'; 
+}, false );
+</script>
+EOD;
+}
+
+//お問い合わせ完了
+if( get_the_ID() == '188' ) { //投稿ID
+echo <<< EOD
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'https://wpwork.hiroooo.com/contactthank/'; 
+}, false );
+</script>
+EOD;
+}
+}
+
+/**
+ * パンくずタイトルの書き換え
+ *
+ * https://mtekk.us/code/breadcrumb-navxt/breadcrumb-navxt-doc/2/#bcn_breadcrumb_title
+ * @param object $title タイトル.
+ */
+function my_bcn_breadcrumb_title( $title, $this_type, $this_id ) {
+	if ( is_post_type_archive( 'blog' ) ) {
+		$title = 'ニュース';
+	}
+	return $title;
+};
+add_filter( 'bcn_breadcrumb_title', 'my_bcn_breadcrumb_title', 10, 3 );
+

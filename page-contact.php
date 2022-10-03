@@ -26,11 +26,6 @@
           
           <?php the_content(); ?>
 
-          <!-- <-- 送信後メッセージ -->
-          <div class="contact__page__apply__form__afterSend">
-            <p class="contact__page__apply__form__afterSend__sentence">お問い合わせありがとうございました。<br> 2日以内に担当者からメールにてご連絡いたしますので、しばらくお待ちいただけますと幸いです。</p>
-            <p class="contact__page__apply__form__afterSend__sentenceArrow">→ </p><a class="contact__page__apply__form__afterSend__sentenceLink">トップへ戻る<br><br></a>
-          </div>
         <!-- </form> -->
       </div>
     </div>

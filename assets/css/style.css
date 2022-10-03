@@ -422,6 +422,14 @@ a {
 	color: #CCCCCC;
 }
 
+
+.wpcf7-select{
+	color: #CCCCCC;
+}
+.wpcf7-select{
+	color: #000;
+}
+
 textarea {
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 500;
@@ -494,6 +502,31 @@ textarea::placeholder {
 	width: 100%;
 }
 
+  
+span.wpcf7-list-item {
+	margin: 0px 10px 0 0; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	/* margin: 0; */
+}
+
+span.wpcf7-acceptance{
+width: 32px;
+height: 32px;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+span.wpcf7-form-control-wrap{
+	width: 32px;
+	height: 32px;
+	position: relative;
+}
+
 /* デフォルト */
 input[type="checkbox"] {
 	cursor: pointer; /*labelにhoverした時にカーソルを表示させる*/
@@ -511,15 +544,29 @@ input[type="checkbox"] {
 	border-bottom: #000 1px solid;
 	line-height: 24px;
 	vertical-align: bottom;
+	margin-left: 10px;
 }
 
 .c-form__sendBtn {
 	margin: 40px auto 0px auto;
 	max-width: 336px;
+	height: 72px;
+	position: relative;
+}
+
+.c-apply-sendBtn{
+position: absolute;
+top: 0;
+
 }
 
 .c-apply-sendBtn.c-apply-btn::after {
 	height: 0;
+}
+
+/* 「に同意します」部分 */
+.c-form__check__sentence{
+margin-left: 10px;
 }
 
 
@@ -2436,7 +2483,7 @@ header-top修正
 ======================== */
 
 .download__page__apply__form__afterSend {
-	display: none;
+	/* display: none; */
 }
 
 .download__page__apply__form__afterSend__title {
@@ -2498,7 +2545,7 @@ header-top修正
 ======================== */
 
 .contact__page__apply__form__afterSend {
-	display: none;
+	/* display: none; */
 	font-size: 14px;
 }
 
@@ -2514,7 +2561,7 @@ header-top修正
 }
 
 .contact__sended {
-	display: none;
+	/* display: none; */
 }
 
 .br-sp {
@@ -3511,6 +3558,37 @@ footer {
 
 html {
 	scroll-padding-top: 60px;}
+
+
+/* ========================
+追加
+======================== */
+
+.c-form__check__detail{
+	font-size: 14px;
+}
+
+.c-form__check__sentence{
+font-size: 14px;
+margin-left: 6px;
+}
+
+input[type="checkbox"]{
+	width: 28px;
+	height: 28px;
+}
+
+span.wpcf7-list-item{
+width: 28px;
+height: 28px;
+margin: 4px 10px 0 0; 
+}
+
+.download__page .wpcf7-form{
+	margin-top: 60px;
+	padding: 40px 20px ;
+}
+
 
 }
 
