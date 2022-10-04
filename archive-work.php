@@ -42,7 +42,10 @@ get_header(); ?>
         
       <?php 
       //’course’というタクソノミーの情報を入手してforeachで１つずつ代入
-      $courses_terms = get_terms('course', array('hide_empty' => false));//空の投稿でもメニューは表示
+      $courses_terms = get_terms('course', array(
+        'hide_empty' => false,//空の投稿でもメニューは表示
+      ));
+
         foreach ($courses_terms as $courses_term): ?> 
 
           <!--ビジネス英語研修-->
@@ -54,6 +57,8 @@ get_header(); ?>
           </div>
 
           <div class="caseStudy__page__content__cards">
+
+
 
           <!-- 研修コース（タクソノミー）別で記事を表示（ループ） -->
           <?php 
@@ -180,26 +185,17 @@ get_header(); ?>
             
           </div>
           
-          <?php 
-            $args = array(
-              'post_type' => 'service',//役員紹介のpost-type
-              'term' => 'slug',
-              'posts_per_page' => -1,
-              'no_found_rows' => true,
-              );
-              $course_query = new WP_Query($args); ?>
 
-            <?php if($course_query->have_posts()): $course_query->the_post(); ?> 
-            
-
-          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $query->post->ID;?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
-          <?php wp_reset_postdata(); ?>
+          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
 
 
-          <?php endif; ?>
-          <?php endforeach; ?>
+
+
+          <?php endforeach; ?><!-- 研修コース（タクソノミー）別で記事を表示（ループ） -->
+
         </div>
-        <?php endforeach; ?>
+
+        <?php endforeach; ?><!--’course’というタクソノミーの情報を入手してforeachで１つずつ代入 -->
 
       </div>
 
