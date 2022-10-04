@@ -129,7 +129,7 @@
               <div class="l-main-title c-title c-title-type3 case-study__title c-english-title">CASE STUDY</div>
               <div class="l-sub-title c-sub-title-type2">導入事例</div>
             </div>
-            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/work'); ?>">
+            <div class="l-view-more-pc c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/case'); ?>">
                 <div class="c-view-more-sentence-type1 c-english-title">View more</div>
                 <div class="c-view-more-arrow-box-type1">
                   <div class="c-view-more-arrow-type1"></div>
@@ -141,7 +141,7 @@
               <?php 
               
               $args = array(
-                'post_type' => 'work',//カスタム投稿のslug CPT UI（プラグイン）で設定済み
+                'post_type' => 'case',//カスタム投稿のslug CPT UI（プラグイン）で設定済み
                 'posts_per_page' => 6 //表示件数（-1で全ての記事を表示）
                 );
               
@@ -191,7 +191,7 @@
 
 
             <div class="l-view-more-box case-study__view-more">
-              <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/work'); ?>">
+              <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/case'); ?>">
                   <div class="c-view-more-sentence-type1 c-english-title">View more</div>
                   <div class="c-view-more-arrow-box-type1">
                     <div class="c-view-more-arrow-type1"></div>
