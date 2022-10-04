@@ -1,6 +1,6 @@
 <?php
 /**
- * Archive Work
+ * page-case
  */
 
 get_header(); ?>
@@ -65,7 +65,7 @@ get_header(); ?>
           $terms = get_terms( $courses_term );
           foreach ( $terms as $term ) :
               $args = array(
-                  'post_type' => 'work',//導入事例のpost-type
+                  'post_type' => 'case',//導入事例のpost-type
                   'taxonomy' => 'course',//タクソノミー名「研修コース」
                   'term' => $term->slug,
                   'posts_per_page' => -1,

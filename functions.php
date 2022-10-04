@@ -128,7 +128,7 @@ if( get_the_ID() == '179' ) {//投稿ID
 echo <<< EOD
 <script>
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-  location = 'https://wpwork.hiroooo.com/downloadthank/'; 
+  location = 'https://wpwork.hiroooo.com/download-thanks/'; 
 }, false );
 </script>
 EOD;
@@ -139,7 +139,7 @@ if( get_the_ID() == '188' ) { //投稿ID
 echo <<< EOD
 <script>
 document.addEventListener( 'wpcf7mailsent', function( event ) {
-  location = 'https://wpwork.hiroooo.com/contactthank/'; 
+  location = 'https://wpwork.hiroooo.com/contact-thanks/'; 
 }, false );
 </script>
 EOD;
