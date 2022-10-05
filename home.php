@@ -7,21 +7,19 @@
       </div>
     </div>
     <!--パンくずリスト-->
-    <?php 
-      if(function_exists('bcn_display')):
-    ?>
     <div class="header-breadcrumbs l-inner">
-      <?php bcn_display(); ?>
-      <!-- <div class="header-breadcrumbs-home">ホーム</div>
+      <a class="header-breadcrumbs-home" href="<?php echo home_url('/') ?>">ホーム</a>
       <div class="header-breadcrumbs-arrow">＞</div>
-      <div class="header-breadcrumbs-firstTitle">ニュース</div> -->
+      <div class="header-breadcrumbs-firstTitle">ニュース</div>
     </div>
-    <?php endif; ?>
 
 
     <div class="news__page">
       <div class="news__page__front">
-        <div class="news__page__front-title"><?php the_archive_title(); ?></div>
+
+        <div class="news__page__front-title">ニュース</div>
+
+       
 
         <?php 
           if(have_posts()):?>

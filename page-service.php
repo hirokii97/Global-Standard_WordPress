@@ -29,10 +29,14 @@
         <div class="service__main__page">
 
           <!-- 研修コース（タクソノミー）別で記事を表示（ループ） -->
+
+          <!-- id取得 -->
+
           <?php 
             $args = array(
-              'post_type' => 'service',//役員紹介のpost-type
+              'post_type' => 'service',//サービス（固定ページ）のpost-type
               'term' => 'slug',
+
               'posts_per_page' => -1,
               'no_found_rows' => true,
               );
@@ -41,12 +45,14 @@
           <?php if($query->have_posts()):  ?> 
           <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-          <div class="service__main__section" id="<?php the_ID();?>">
+          <div class="service__main__section" id="">
+
             <div class="service__section__card">
               <div class="service__card-title-section">
 
                 <!-- 研修名 -->
                 <div class="service__card-title-section-title">
+
 
                 <?php if(get_field('service_name')): ?>
                 <?php the_field('service_name') ?>

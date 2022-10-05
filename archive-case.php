@@ -186,7 +186,7 @@ get_header(); ?>
           </div>
           
 
-          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
+          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $courses_term->slug ?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
 
 
 
