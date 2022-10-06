@@ -123,3 +123,19 @@
             <p class="download__page__apply__form__afterSend__sentenceArrow">→ </p><a class="download__page__apply__form__afterSend__sentenceLink">資料のダウンロードリンクはこちら<br><br></a>
             <p class="download__page__apply__form__afterSend__sentence">また、ご入力いただいたメールアドレスの方へもダウンロードリンクを送付しておりますので、ご確認いただけますと幸いです。</p>
           </div>
+
+
+
+
+
+
+
+
+
+          <div class="footer-menu__address">
+            <div class="address-name">〒550-1000 大阪市西区土佐堀9-5-5</div>
+            <div class="address-info">
+              <div class="address-tell">TEL 06-123-4567</div>
+              <div class="address-fax">FAX 06-123-4568</div>
+            </div>
+          </div>

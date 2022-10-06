@@ -167,7 +167,7 @@
                 <?php if( get_field( 'company' )):?>
                 <?php the_field( 'company' ); ?>
                 <?php endif; ?>
-                  様
+                  　様
                 </div>
                 
                 <!-- 研修コース -->

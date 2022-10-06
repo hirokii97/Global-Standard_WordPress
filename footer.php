@@ -23,10 +23,10 @@
         <div class="footer-menu">
           <div class="footer-menu__title">Global Standard</div>
           <div class="footer-menu__address">
-            <div class="address-name">〒550-1000 大阪市西区土佐堀9-5-5</div>
-            <div class="address-info">
-              <div class="address-tell">TEL 06-123-4567</div>
-              <div class="address-fax">FAX 06-123-4568</div>
+            <div class="address-name address-info">
+            〒550-1000　大阪市西区土佐堀9-5-5<br>
+            TEL　06-123-4567<br>
+            FAX　06-123-4568
             </div>
           </div>
           <div class="footer-copyright">
