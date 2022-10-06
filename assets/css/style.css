@@ -208,6 +208,7 @@ a {
 	margin-top: 16px;
 }
 
+
 .c-view-more-link {
 	display: flex;
 	margin-top: 3px;
@@ -219,31 +220,31 @@ a {
 }
 
 .c-view-more-arrow-box-type1 {
-	margin-left: 13px;
+	margin-left: 15px;
 	margin-top: 14px;
 	position: relative;
 	text-align: left;
-	width: 140px;
+	width: 125px;
 }
 
 .c-view-more-arrow-box-type1::after {
 	border: #FEF251 3px solid;
 	border-radius: 50%;
 	content: "";
-	height: 50px;
-	left: 68px;
+	height: 53px;
+	left: 73px;
 	position: absolute;
-	top: -14px;
-	width: 50px;
+	top: -17px;
+	width: 53px;
 }
 
 .c-view-more-arrow-type1 {
 	border-bottom: 2px #FFFFFF solid;
 	border-right: 2px #FFFFFF solid;
 	display: inline-block;
-	height: 7px;
+	height: 12px;
 	margin-bottom: 4px;
-	transform: skew(45deg);
+	transform: skew(50deg);
 	transition: all 0.5s 0s ease;
 	width: 95px;
 }
@@ -263,22 +264,22 @@ a {
 }
 
 .c-view-more-arrow-box-type2 {
-	margin-left: 13px;
+	margin-left: 15px;
 	margin-top: 14px;
 	position: relative;
 	text-align: left;
-	width: 140px;
+	width: 125px;
 }
 
 .c-view-more-arrow-box-type2::after {
 	background-color: #FEF251;
 	border-radius: 50%;
 	content: "";
-	height: 50px;
-	left: 68px;
+	height: 53px;
+	left: 73px;
 	position: absolute;
-	top: -14px;
-	width: 50px;
+	top: -17px;
+	width: 53px;
 	z-index: -1;
 }
 
@@ -611,7 +612,7 @@ header {
 .header__nav :nth-child(n+2)::before {
 	content: "／";
 	position: absolute;
-	transform: translate(-24px, -1px);
+	transform: translate(-29px, -1px);
 }
 
 .header__btn-box {
@@ -621,8 +622,8 @@ header {
 
 .header__btn-box a {
 	font-size: 14px;
-	padding-bottom: 24px;
-	padding-top: 24px;
+	padding-bottom: 21px;
+	padding-top: 23px;
 	width: 176px;
 }
 
@@ -868,6 +869,7 @@ top
 ======================== */
 
 .p-top {
+	margin-top: 100px;
 	height: 700px;
 }
 
@@ -893,7 +895,7 @@ top
 .p-top__message {
 	left: -40px;
 	position: absolute;
-	top: 435px;
+	top: 420px;
 }
 
 .p-top__message-title {
@@ -942,7 +944,7 @@ about
 }
 
 .about__background {
-	background: url(../img/bg-case.png) right top/40% 800px no-repeat;
+	background: url(../img/bg-case.png) right top / 500px 800px no-repeat ;
 	position: relative;
 }
 
@@ -952,7 +954,7 @@ about
 	height: 600px;
 	left: 0;
 	position: absolute;
-	top: 283px;
+	top: 265px;
 	transform: skew(0deg, 10deg);
 	width: 100%;
 	z-index: -1;
@@ -962,7 +964,7 @@ about
 	align-items: center;
 	display: flex;
 	gap: 40px;
-	margin-top: 22px;
+	margin-top: 17px;
 }
 
 .about__sentence {
@@ -1023,6 +1025,13 @@ service
 	display: flex;
 	justify-content: space-between;
 	margin-top: 33px;
+}
+
+.service-cards-inner{
+max-width: 1152px;
+width: 100%;
+margin: 0 auto;
+padding: 0 10px;
 }
 
 .service__card {

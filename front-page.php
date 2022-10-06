@@ -6,7 +6,7 @@
         <div class="p-top__contents top-mv1 swiper-slide">
           <div class="p-top__message">
             <div class="p-top__message-title c-english-title">
-              <div class="p-top__message-item message-title1 c-title-type2">YOU CAN<span class="pc-message-title">CHANGE</span></div>
+              <div class="p-top__message-item message-title1 c-title-type2">YOU CAN <span class="pc-message-title">CHANGE</span></div>
               <div class="p-top__message-item message-title2 c-title-type2"> CHANGE</div>
               <div class="p-top__message-item message-title3 c-title-type2">THE WORLD</div>
             </div>
@@ -67,10 +67,10 @@
       </div>
     </div>
     <div class="service service-background">
-      <div class="service__inner l-inner">
+      <div class="service__inner">
         <div class="service__wrapper"> 
-          <div class="l-title">
-            <div class="l-title-box">
+          <div class="l-title l-inner">
+            <div class="l-title-box ">
               <div class="l-main-title c-title c-english-title">SERVICE</div>
               <div class="l-sub-title c-sub-title">サービス</div>
             </div>
@@ -81,7 +81,7 @@
                 </div></a></div>
           </div>
           <div class="service__contents"> 
-            <div class="service__cards">
+            <div class="service__cards service-cards-inner">
               <div class="service__card">
                 <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number01.png" alt=""></div>
                 <div class="service__card-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service01.png" alt="">
