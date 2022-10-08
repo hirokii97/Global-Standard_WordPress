@@ -2865,6 +2865,32 @@ header {
 	/* height: 60px; */
 }
 
+.about__main__concept{
+	font-size: 20px;
+}
+
+.about__main__contents{
+	top: 128px;
+}
+
+.about__company-cardContents{
+	padding-left: 0px;
+}
+
+.about__member-image{
+	height: 320px;
+	width: 240px;
+	margin: 0 auto;
+}
+
+.about__member-sentence{
+	margin-top: 18px;
+}
+
+.about__member-sns{
+	margin-top: 17px;
+}
+
 .header__inner {
 	align-items: center;
 	display: flex;
@@ -3120,7 +3146,7 @@ margin-top: 39px;
 }
 
 .p-header__top{
-	margin-top: 44.8px;
+	margin-top: 60px;
 }
 
 .p-header__top__wrapper {
@@ -3143,6 +3169,10 @@ margin-top: 39px;
 .p-header__top__subtitle {
 	font-size: 16px;
 	width: 100px;
+}
+
+.about__main{
+	margin-top: 59px;
 }
 
 .about__main__head {
@@ -3182,7 +3212,7 @@ margin-top: 39px;
 
 .about__company-card {
 	background-image: linear-gradient(90deg, #163F74 0px 104px, #E8EAEC 104px);
-	padding-bottom: 17px;
+	padding-bottom: 11px;
 	padding-top: 17px;
 
 }
@@ -3200,7 +3230,7 @@ margin-top: 39px;
 }
 
 .about__member {
-	padding: 60px 20px 156px 20px;
+	padding: 64px 20px 83px 20px;
 }
 
 .about__member::after {
@@ -3209,11 +3239,19 @@ margin-top: 39px;
 	height: 1330px;
 }
 
+
 .about__member__contents {
 	display: block;
-	margin: 60px auto 0px auto;
+	margin: 48px auto 0px auto;
 	max-width: 335px;
 }
+
+.about__member__contents:nth-child(1) {
+	display: block;
+	margin: 38px auto 0px auto;
+	max-width: 335px;
+}
+
 
 .about__name__card {
 	margin-top: 20px;
