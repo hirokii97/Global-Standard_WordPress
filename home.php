@@ -68,12 +68,12 @@
                   $limit = 2;
                   $num = $wp_query->current_post;
                   if ( $limit > $num ):
-                    echo 'New';
+                    echo 'NEW';
                   endif;
                 ?>
                 </div>
 
-                <time class="news__content__bar__date c-front-new-mark c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+                <time class="news__content__bar__date c-front-new-mark c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
               </div>
               <div class="news__page__content__title"><?php the_title(); ?></div>
             </div>

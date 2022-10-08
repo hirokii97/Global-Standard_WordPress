@@ -1,10 +1,10 @@
-<sidebar class="sidebar">新着記事
+<sidebar class="sidebar"><div class="sidebar-titile">新着記事</div>
 
         <div class="newPost__page__wrapper">
 
         <?php
             $args = array(
-              'posts_per_page' => 3 // 表示件数の指定
+              'posts_per_page' => 5 // 表示件数の指定
             );
             $posts = get_posts( $args );
             foreach ( $posts as $post ): // ループの開始
@@ -36,7 +36,7 @@
                 ?>
 
                 <!-- 公開日時を動的に表示する -->
-                <time class="newPost__content__bar__date c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+                <time class="newPost__content__bar__date c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
 
               </div>
               <div class="newPost__page__content__title"><?php the_title(); ?></div>
