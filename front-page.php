@@ -110,7 +110,7 @@
                 <div class="service__card-sentence">将来的に海外で働きたい方に向けた講座をご用意しております。一般的には3ヶ月〜1年の期間で基本的な英会話スキルと、海外でのビジネスマナー習得を目指します。<br> 通常の語学留学では得られないビジネスの場で通用するコミュニケーションスキル習得に重点をおいておりますので、海外でビジネス展開する際に自信を持って活動することができるようになります。</div>
               </div>
             </div>
-            <div class="l-view-more-box">
+            <div class="l-view-more-box l-view-more-box-service">
               <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/service') ?>">
                   <div class="c-view-more-sentence-type2 c-english-title">View more</div>
                   <div class="c-view-more-arrow-box-type2">
@@ -246,7 +246,7 @@
                     }
                   ?>
                   <!-- 公開日時を動的に表示する -->
-                  <time class="p-news__card-date c-post-card-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+                  <time class="p-news__card-date c-post-card-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
                 </div>
                 <div class="p-news__card-title c-post-card-title"><?php the_title(); ?></div>
                   </a>
