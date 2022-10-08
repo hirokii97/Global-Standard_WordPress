@@ -787,7 +787,7 @@ footer {
 	color: #FEF251;
 	display: inline-block;
 	font-size: 24px;
-	line-height: 98px;
+	line-height: 92px;
 	position: relative;
 	width: 315px;
 }
@@ -836,7 +836,7 @@ footer {
 	background-color: #1A1A1A;
 	color: #FFFFFF;
 	padding-bottom: 19px;
-	padding-top: 114px;
+	padding-top: 111px;
 	position: relative;
 	text-align: center;
 }
@@ -957,7 +957,7 @@ about
 .about__background::after {
 	background-color: #EDF3F8;
 	content: "";
-	height: 600px;
+	height: 570px;
 	left: 0;
 	position: absolute;
 	top: 265px;
@@ -970,7 +970,7 @@ about
 	align-items: center;
 	display: flex;
 	gap: 40px;
-	margin-top: 17px;
+	margin-top: 15px;
 }
 
 .about__sentence {
@@ -1195,7 +1195,7 @@ case-study
 .p-header__top {
 	height: 250px;
 	width: 100%;
-	margin-top: 68px;
+	margin-top: 100px;
 }
 
 .p-header__top__wrapper {
@@ -1219,9 +1219,13 @@ case-study
 .header-breadcrumbs .home{
 	color: #888888;
 }
+.header-breadcrumbs{
+	font-size: 12px;
+}
 
 .header-breadcrumbs-arrow {
 	margin-left: 8px;
+	margin-right: 8px;
 }
 
 .header-breadcrumbs-firstTitle {
@@ -1290,8 +1294,14 @@ MISSION VISION
 	max-width: 688px;
 	padding: 32px 5px;
 	position: relative;
-	top: 120px;
+	top: 110px;
 	width: 100%;
+}
+
+/* VISIONの.about__main__contents */
+.about__main__second{
+	top: 116px;
+
 }
 
 .about__main__concept {
@@ -1315,7 +1325,7 @@ MISSION VISION
 
 .about__company {
 	background: url(../img/bg-case.png) no-repeat center center/cover;
-	margin-top: 296px;
+	margin-top: 300px;
 	padding: 80px 20px;
 }
 
@@ -1324,6 +1334,7 @@ MISSION VISION
 	margin: 0 auto;
 	max-width: 768px;
 	padding: 60px 20px;
+	padding-bottom: 77px;
 	width: 100%;
 }
 
@@ -1339,17 +1350,17 @@ MISSION VISION
 	background-repeat: no-repeat;
 	background-size: 100% 1px;
 	margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 59px;
 	max-width: 688px;
 	width: 100%;
 }
 
 .about__company-card {
-	background-image: linear-gradient(90deg, #163F74 0px 174px, #E8EAEC 174px);
+	background-image: linear-gradient(90deg, #163F74 0px 200px, #E8EAEC 174px);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: 100% 1px;
-	padding-bottom: 24px;
+	padding-bottom: 23px;
 	padding-top: 24px;
 }
 
@@ -1359,6 +1370,7 @@ MISSION VISION
 	margin: 0 auto;
 	max-width: 656px;
 	width: 100%;
+	padding-left: 14px;
 }
 
 .about__company-tag {
@@ -1382,9 +1394,9 @@ MISSION VISION
 
 .about__member::after {
 	background-color: #EDF3F8;
-	bottom: 5px;
+	bottom: 32px;
 	content: "";
-	height: 600px;
+	height: 570px;
 	left: 0;
 	position: absolute;
 	transform: skew(0deg, 10deg);
@@ -1410,6 +1422,7 @@ MISSION VISION
 }
 
 .about__name__card {
+	margin-top: -3px;
 	align-items: baseline;
 	display: flex;
 	font-weight: 700;
@@ -1420,12 +1433,15 @@ MISSION VISION
 }
 
 .about__name {
-	font-size: 24px;
+	/* font-size: 24px; */
+	font-size: 20px;
 	margin-left: 20px;
 }
 
 .about__member-sentence {
-	margin-top: 32px;
+	margin-top: 30px;
+	line-height: 1.7;
+	font-size: 14px;
 }
 
 .about__member-sns {
@@ -2596,9 +2612,7 @@ html {
 	display: none;
 }
 
-.l-sub-title{
-font-size: 16px;
-}
+
 
 .header-menu-hamburger {
 	display: none;
@@ -2666,6 +2680,10 @@ font-size: 16px;
 .l-inner {
 	padding: 0 20px;
 }
+
+.l-sub-title{
+	font-size: 16px;
+	}
 
 .l-view-more-pc {
 	display: none;
@@ -3166,6 +3184,7 @@ margin-top: 39px;
 	background-image: linear-gradient(90deg, #163F74 0px 104px, #E8EAEC 104px);
 	padding-bottom: 17px;
 	padding-top: 17px;
+
 }
 
 .about__company-cardContents {

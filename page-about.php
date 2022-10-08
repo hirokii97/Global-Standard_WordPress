@@ -39,7 +39,7 @@
               <div class="about__main__title c-english-title">VISION</div>
               <div class="about__main__subtitle c-sub-title">企業理念</div>
             </div>
-            <div class="about__main__contents l-inner">
+            <div class="about__main__contents l-inner about__main__second">
               <div class="about__main__concept">文化の垣根を越えた <br class="br-pc">人と人とのつながりが新しい価値を生む</div>
               <div class="about__main__sentence">コミュニケーションスキル習得をサポートすることで一人でも多くのビジネスパーソンの視野を広げ、世界を舞台に新しい相乗効果を生む未来を創造する。文化の垣根を越えた人と人とのつながりが新しい価値を生むことを信念とする。</div>
             </div>

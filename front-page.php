@@ -103,7 +103,7 @@
                 <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number03.png" alt=""></div>
                 <div class="service__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service03.png" alt="">
                   <div class="service__card-title">
-                    <div class="service__card-title-item c-title-type2">コミュニケーション研修<br></div>
+                    <div class="service__card-title-item c-title-type2">ビジネス留学<br></div>
                     <div class="service__card-title-item c-title-type2">サポートプログラム</div>
                   </div>
                 </div>
