@@ -2605,6 +2605,7 @@ header-top修正
 	background-color: #EDF3F8;
 	border-radius: 12px;
 	padding: 40px;
+	height: 894px;
 }
 
 .download__page__apply__form__title {
@@ -2632,21 +2633,39 @@ font-weight: 700;
 	/* display: none; */
 }
 
+.download__page__apply__form__afterSend__sentence-wrapper{
+font-size: 14px;
+}
+
+.download__page__apply__form__afterSend__sentence{
+height: 20px;
+}
+
 .download__page__apply__form__afterSend__title {
 	font-size: 32px;
 	font-weight: 700;
 	padding-bottom: 40px;
+	line-height: 1.5;
 }
 
 .download__page__apply__form__afterSend__sentenceArrow {
-	display: inline;
-	margin-top: 14px;
+}
+
+.download__page__apply__form__afterSend__link{
+display: flex;
+margin-top: 14px;
 }
 
 .download__page__apply__form__afterSend__sentenceLink {
+
+	height: 20px;
 	border-bottom: #163F74 1px solid;
 	color: #163F74;
 	margin-left: 8px;
+}
+
+.download__page__apply__form__afterSend__sentence.last{
+margin-top: 40px;
 }
 
 /* ========================
@@ -2713,6 +2732,10 @@ line-height: 26px;
 
 .contact__sended {
 	/* display: none; */
+}
+
+.contact__page.afterSend{
+	margin: 80px auto 135px auto;
 }
 
 .br-sp {
@@ -4086,14 +4109,39 @@ height: 20px;
 
 .c-form__check__detail{
 	line-height: 20px;
+
 }
 
 .wpcf7-form-control.c-apply-sendBtn{
 font-size: 14px;
 }
 
+.download__page .wpcf7-form{
+height: 390px;
+}
 
+.download__page__apply__form__afterSend__title{
+	font-size: 20px;
+	line-height:2;
+}
 
+.download__page__apply__form__afterSend__link{
+	margin-top: 30px;
+}
+
+.contact__page.afterSend{
+	margin: 58px auto 103px auto;
+}
+
+.contact__page__apply__form__afterSend__sentenceArrow{
+display: inline;
+margin-top: 0;
+}
+.contact__page__apply__form__afterSend__link{
+display: flex;
+margin-top: 16px;
+height: 20px;
+}
 
 
 }

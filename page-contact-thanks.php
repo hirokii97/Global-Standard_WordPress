@@ -18,14 +18,17 @@
     <?php endif; ?>
 
 
-    <div class="contact__page">
+    <div class="contact__page afterSend">
 
         <!-- <form class="wpcf7-form" id="form" action=""> -->
 
          <!-- <-- 送信後メッセージ -->
           <div class="contact__page__apply__form__afterSend">
             <p class="contact__page__apply__form__afterSend__sentence">お問い合わせありがとうございました。<br> 2日以内に担当者からメールにてご連絡いたしますので、しばらくお待ちいただけますと幸いです。</p>
-            <p class="contact__page__apply__form__afterSend__sentenceArrow">→ </p><a class="contact__page__apply__form__afterSend__sentenceLink" href="<?php echo home_url('/') ?>">トップへ戻る<br><br></a>
+            <div class="contact__page__apply__form__afterSend__link">
+              <p class="contact__page__apply__form__afterSend__sentenceArrow">→ </p>
+              <a class="contact__page__apply__form__afterSend__sentenceLink" href="<?php echo home_url('/') ?>">トップへ戻る<br><br></a>
+            </div>
           </div>
         <!-- </form> -->
       </div>
