@@ -309,6 +309,7 @@ a {
 	color: #163F74;
 	display: block;
 	padding-bottom: 19px;
+	padding-bottom: 24px;
 	padding-top: 24px;
 	position: relative;
 	text-align: center;
@@ -398,7 +399,7 @@ a {
 .c-form__content__tag {
 	display: inline-block;
 	font-size: 18px;
-	line-height: 26px;
+	height: 26px;
 	vertical-align: baseline;
 }
 
@@ -416,8 +417,9 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 500;
 	height: 44px;
-	padding: 10px 0px 10px 16px;
+	padding: 10px 0px 10px 12px;
 	width: 100%;
+	font-size: 16px;
 }
 
 .c-form__content__box input::-moz-placeholder,
@@ -507,7 +509,7 @@ textarea::placeholder {
 	display: flex;
 	justify-content: center;
 	/* justify-content: space-between; */
-	margin: 40px auto 0px auto;
+	margin: 30px auto 0px auto;
 	/* max-width: 300px; */
 	width: 100%;
 }
@@ -1215,6 +1217,8 @@ case-study
 	line-height: 72px;
 }
 
+
+
 .header-breadcrumbs {
 	display: flex;
 	margin-top: 13px;
@@ -1229,7 +1233,7 @@ case-study
 }
 
 .header-breadcrumbs-arrow {
-	margin-left: 1px;
+	margin-left: 8px;
 	margin-right: 8px;
 }
 
@@ -2203,7 +2207,7 @@ margin-right: 11px;
 	font-size: 24px;
 	font-weight: 700;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 12px;
 	max-width: 760px;
 }
 
@@ -2351,15 +2355,20 @@ header-top修正
 導入事例
 ======================== */
 
+.caseStudy__page{
+padding-bottom: 77px;
+}
+
 .caseStudy__page__content {
-	margin-bottom: 160px;
-	margin-top: 80px;
+	margin-bottom: 102px;
+	margin-top: 76px;
 }
 
 .caseStudy__page__content__title {
 	align-items: center;
 	border-left: #163F74 8px solid;
 	display: flex;
+	height: 40px;
 }
 
 .caseStudy__page__content__mainTitle {
@@ -2382,7 +2391,7 @@ header-top修正
 .caseStudy__page__content__card {
 	border-radius: 12px 12px 12px 12px;
 	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1607843137);
-	margin-top: 60px;
+	margin-top: 67px;
 	max-width: 510px;
 	position: relative;
 	width: 100%;
@@ -2482,15 +2491,24 @@ header-top修正
 
 .caseStudy__page__content__card__item-sentence {
 	margin-top: 9px;
+	font-size: 14px;
 }
 
 /* ========================
 詳細ボタン
 ======================== */
 
+.caseStudy__page__btn-box{
+	width: 100%;
+	margin: 83px auto 0px auto;
+	text-align: center;
+
+}
+
 .caseStudy__page__btn {
-	margin: 60px auto 0px auto;
-	width: 336px;
+	display: inline;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 /* ========================
@@ -2504,8 +2522,8 @@ header-top修正
 .download__page {
 	display: flex;
 	justify-content: space-between;
-	margin: 80px auto 120px auto;
-	max-width: 1120px;
+	margin: 78px auto 120px auto;
+	max-width: 1163px;
 	padding: 0px 10px;
 	width: 100%;
 }
@@ -2523,22 +2541,28 @@ header-top修正
 .download__page__detail__title {
 	font-size: 28px;
 	font-weight: 700;
+	line-height: 1.42;
 }
 
 .download__page__detail__image {
 	height: 389px;
 	margin: 0 auto;
-	max-width: 275px;
+	margin-top: 46px;
+	max-width: 309px;
 	width: 100%;
+	background:url(../img/pamphlet.png) center center / cover;
 }
 
 .download__page__detail__image img {
 	height: 389px;
 	width: 275px;
+
 }
 
 .download__page__detail__sentence {
-	margin-top: 40px;
+	margin-top: 36px;
+	font-size: 14px;
+	line-height: 1.7;
 }
 
 /* ========================
@@ -2574,6 +2598,7 @@ header-top修正
 
 .download__form__content__tag__requiredTag {
 	margin-left: 9px;
+	line-height: 20px;
 }
 
 /* ========================
@@ -2665,6 +2690,12 @@ header-top修正
 .br-sp {
 	display: none;
 }
+
+.p-header__download__subtitle{
+	width: 160px;
+	margin-top: 7px;
+	margin-left: -3px;
+	}
 
 
 @media screen and (min-width: 1104px) {
@@ -2881,7 +2912,7 @@ height: 20px;
 }
 
 .c-form__content {
-	margin-top: 20px;
+	margin-top: 14px;
 }
 
 .c-form__content__textarea {
@@ -2941,6 +2972,12 @@ header {
 
 .wp-block-quote{
 margin-left: 0px;
+padding-left: 29px;
+padding-top: 35px;
+}
+
+.news__post__content__pageNation-btn{
+	padding: 5px 15px;
 }
 
 .about__company-cardContents{
@@ -3014,6 +3051,13 @@ margin-top: 39px;
 
 .btn-view-more::after{
 	right: 6%;
+}
+
+.c-form__content__box input,
+.c-form__content__box select,
+.c-form__content__box option {
+
+	font-size: 14px;
 }
 
 
@@ -3232,7 +3276,7 @@ margin-top: 39px;
 	line-height: 38px;
 }
 
-.header-breadcrumbs {
+.header-breadcrumbs span{
 	font-size: 12px;
 }
 
@@ -3730,12 +3774,14 @@ align-items: baseline;
 
 .news__post {
 	display: block;
-	max-width: calc(100% - 10px);
+	max-width: calc(100% - 20px);
+
 }
 
 .news__post__wrapper {
 	margin-bottom: 100px;
 	padding-left: 0px;
+	margin-top: 56px;
 }
 
 .news__post__header__item__category {
@@ -3744,12 +3790,23 @@ align-items: baseline;
 }
 
 .news__post__header__item__date {
-	padding-right: 0px;
+	padding-right: 2px;
 }
 
 .news__post__image {
 	height: auto;
-	margin-top: 24px;
+	margin-top: 40px;
+}
+
+.news__post__contents ul{
+	margin-left: 0;
+	line-height: 1.5;
+}
+
+.news__post__header__title {
+	margin-top: 2px;
+	height: auto;
+	/* height: 100px; */
 }
 
 .news__post__content__quote {
@@ -3762,9 +3819,20 @@ align-items: baseline;
 	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-company_sp.png) no-repeat center/cover;
 }
 
+.caseStudy__page{
+	padding: 0 20px;
+}
+
 .caseStudy__page__tab {
 	flex-direction: column;
 	margin-top: 60px;
+}
+
+
+.caseStudy__page__content__title{
+	border-left: #163F74 8px solid;
+	height: 55px;
+
 }
 
 .caseStudy__page__tab__item {
@@ -3783,15 +3851,54 @@ align-items: baseline;
 
 .caseStudy__page__content__mainTitle {
 	font-size: 24px;
+	height: 35px;
+}
+
+
+
+.caseStudy__page__content__card__item-titleName{
+	font-size: 16px;
+	margin-left: 5px;
+	height: 24px;
 }
 
 .caseStudy__page__content__subTitle {
 	font-size: 14px;
-	padding-left: 12px;
+	padding-left: 10px;
 }
 
 .caseStudy__page__content__cards {
 	justify-content: space-around;
+}
+
+.caseStudy__page__content__card__item {
+	margin-top: 29px;
+}
+
+.caseStudy__page__content__card__item-sentence{
+	line-height: 1.68;
+	margin-top: 10px;
+}
+
+.caseStudy__page__btn-box{
+width: 295px;
+margin: 35px auto 0px auto;
+}
+
+.caseStudy__page__btn{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	width: 295px;
+	font-size: 14px;
+}
+
+.caseStudy-first-item{
+	margin-top: 17px;
+	}
+
+.caseStudy__page__content{
+margin-bottom: 60px;
 }
 
 .caseStudy__page__content__card {
@@ -3847,7 +3954,7 @@ align-items: baseline;
 .download__page {
 	display: block;
 	margin: 60px auto 100px auto;
-	max-width: calc(100% - 10px);
+	max-width: calc(100% - 20px);
 }
 
 .download__page__apply__form {
@@ -3912,6 +4019,53 @@ margin: 4px 10px 0 0;
 	margin-top: 60px;
 	padding: 40px 20px ;
 }
+
+.p-header__download__subtitle{
+	width: 130px;
+	margin-top: 7px;
+	margin-left: 0px;
+	}
+
+.download__page__detail__title{
+font-size: 20px;
+	}
+
+.download__page__detail__image{
+margin-top: 41px;
+}
+
+.download__page__apply__form__title{
+/* margin-bottom: 10px; */
+}
+.c-form__content__tag{
+height: 20px;
+}
+
+.download__form__content__tag__requiredTag{
+	box-sizing: content-box;
+	margin: 0px 0px 3px 4px;
+	font-size: 10px;
+	height: 17px;
+}
+
+.download__page__apply__form__title{
+	padding-bottom: 20px;
+}
+
+.c-form__check{
+	margin: 36px auto 0px auto;
+}
+
+.c-form__check__detail{
+	line-height: 20px;
+}
+
+.wpcf7-form-control.c-apply-sendBtn{
+font-size: 14px;
+}
+
+
+
 
 
 }

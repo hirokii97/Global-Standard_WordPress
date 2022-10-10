@@ -32,7 +32,7 @@
             } 
             ?>
 
-              <time class="news__post__header__item__date c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
+              <time class="news__post__header__item__date c-date-font" datetime="<?php the_time('c'); ?>"><?php the_time('Y.n.j'); ?></time>
 
             </div>
             <div class="news__post__header__title"><?php the_title(); ?></div>

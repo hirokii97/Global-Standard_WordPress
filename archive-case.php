@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="p-header__top news-top">
+<div class="p-header__top caseStudy-top">
       <div class="p-header__top__wrapper">
         <div class="p-header__top__title c-title-type2 c-english-title">CASE STUDY</div>
         <div class="p-header__top__subtitle c-title-type2 c-sub-title p-header__service__subtitle">導入事例</div>
@@ -128,7 +128,7 @@ get_header(); ?>
                 </div>
 
                 <!--研修の目的-->
-                <div class="caseStudy__page__content__card__item">
+                <div class="caseStudy__page__content__card__item caseStudy-first-item">
                   <div class="caseStudy__page__content__card__item-title">
                     <div class="caseStudy__page__content__card__item-titleMark"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon-check.png' " alt=""></div>
                     <div class="caseStudy__page__content__card__item-titleName">研修の目的</div>
@@ -185,8 +185,9 @@ get_header(); ?>
             
           </div>
           
-
-          <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $courses_term->slug ?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
+         <div class="caseStudy__page__btn-box">
+           <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $courses_term->slug ?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
+         </div> 
 
 
 

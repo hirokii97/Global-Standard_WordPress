@@ -139,3 +139,6 @@
               <div class="address-fax">FAX 06-123-4568</div>
             </div>
           </div>
+
+
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/pamphlet.png" alt="">
