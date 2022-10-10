@@ -720,12 +720,19 @@ header {
 
 .header-drawer-wrapper li{
 	color: #FFF;
-	margin-top: 40px;
+	margin-top: 38px;
 }
 
 .header-drawer-wrapper li:nth-child(1){
 	margin-top: 0px;
+}
 
+.contact__btn#menu-item-210{
+margin-top: 29px;
+}
+
+.contact__btn.menu-item-210{
+margin-left: 0;
 }
 
 .header-drawer-wrapper .header__list {
@@ -764,6 +771,12 @@ header {
 
 .header-drawer-wrapper a:nth-child(n+2) {
 	margin-top: 40px;
+}
+
+/* 資料ダウンロード */
+.header-drawer-wrapper .download__btn #menu-item-239{
+	/* padding-bottom: 15px;
+	padding-top: 14px; */
 }
 
 footer {
