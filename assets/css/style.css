@@ -447,6 +447,7 @@ textarea {
 	font-weight: 500;
 	height: 240px;
 	padding: 10px 0px 10px 16px;
+	padding: 5px 0px 10px 16px;
 	width: 100%;
 }
 
@@ -456,6 +457,7 @@ textarea::-moz-placeholder {
 
 textarea::placeholder {
 	color: #CCCCCC;
+	font-size: 16px;
 }
 
 .c-form__content__box__select {
@@ -512,6 +514,23 @@ textarea::placeholder {
 	margin: 30px auto 0px auto;
 	/* max-width: 300px; */
 	width: 100%;
+}
+
+.contact__page__apply__form__check.c-form__check{
+	margin: 34px auto 0px auto;
+}
+
+.contact__page__apply__form__check > .c-apply-sendBtn{
+	width: 208px;
+}
+
+.contact__page__apply__form__check.c-form__sendBtn {
+	max-width: 199px;
+	margin: 43px auto 0px auto;
+}
+
+.contact__page__apply__form__check input[type="checkbox"]{
+	margin-top: 3px;
 }
 
   
@@ -2601,6 +2620,10 @@ header-top修正
 	line-height: 20px;
 }
 
+.download__page__apply__form__check.c-form__check__detail{
+font-weight: 700;
+}
+
 /* ========================
 送信後メッセージ
 ======================== */
@@ -2639,7 +2662,7 @@ header-top修正
 ======================== */
 
 .contact__page {
-	margin: 80px auto 120px auto;
+	margin: 80px auto 162px auto;
 	max-width: 708px;
 	padding: 0px 10px;
 	width: 100%;
@@ -2656,6 +2679,11 @@ header-top修正
 .contact__page__apply__form__title {
 	font-size: 24px;
 	text-align: center;
+	padding-bottom: 20px;
+}
+
+.contact__form__content.c-form__content{
+line-height: 26px;
 }
 
 .contact__form__content__tag__requiredTag {
