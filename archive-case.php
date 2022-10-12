@@ -181,14 +181,14 @@ get_header(); ?>
 
             <?php endwhile;?>
             <?php endif; ?>
-            <?php wp_reset_postdata(); ?>
             
           </div>
           
-         <div class="caseStudy__page__btn-box">
-           <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $courses_term->slug ?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
-         </div> 
-
+          
+          <div class="caseStudy__page__btn-box">
+            <a class="caseStudy__page__btn c-apply-btn" href="<?php echo esc_url(home_url('/')); ?>service#<?php echo $courses_term->term_order; ?>"><?php echo esc_html( $courses_term->name ) ?>の詳細 </a>
+          </div> 
+          <?php wp_reset_postdata(); ?>
 
 
 

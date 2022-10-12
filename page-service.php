@@ -36,7 +36,6 @@
             $args = array(
               'post_type' => 'service',//サービス（固定ページ）のpost-type
               'term' => 'slug',
-
               'posts_per_page' => -1,
               'no_found_rows' => true,
               );
@@ -45,7 +44,7 @@
           <?php if($query->have_posts()):  ?> 
           <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-          <div class="service__main__section" id="">
+          <div class="service__main__section" id="<?php echo $query->current_post+1 ?>">
 
             <div class="service__section__card">
               <div class="service__card-title-section">
