@@ -2752,7 +2752,7 @@ header-top修正
 ======================== */
 
 .contact-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-contact_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-contact_pc.png) no-repeat center/cover;
 }
 
 /* ========================
