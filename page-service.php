@@ -138,7 +138,7 @@
                   <div class="stepBox step-number c-english-title"><?php the_content(); ?>
                   </div>
                 </div>
-                <div class="service__flow-contents-wrapper">
+                <div class="service__flow-contents-wrapper step<?php echo $query->current_post+1 ?>">
                   <div class="service__flow-contents background-step<?php echo $query->current_post+1 ?> contents-step<?php echo $query->current_post+1 ?>">
                     <div class="service__flow-content">
                       <div class="service__flow-content-title">

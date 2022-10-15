@@ -182,7 +182,7 @@
           <?php if($query->have_posts()):  ?> 
           <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-          <div class="about__member__contents">
+          <div class="about__member__contents about__member__contents<?php echo $query->current_post+1 ?>">
             <div class="about__member-image">
               
               <?php if(has_post_thumbnail()){
