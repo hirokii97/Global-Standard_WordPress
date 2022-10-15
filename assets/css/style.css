@@ -3064,7 +3064,14 @@ height: 20px;
 
 textarea {
 	height: 140px;
+	padding: 12px 0px 10px 16px;
 }
+
+textarea::placeholder {
+	font-size: 14px;
+}
+
+
 
 .c-form__check__checkbox {
 	height: 28px;
@@ -4246,6 +4253,35 @@ height: 20px;
 	color: #D33365;
 	display: inline-block;
 	/* height: 36px; */
+}
+
+.contact__form__content.first{
+	margin-top: 34px;
+}
+
+.contact__page__apply__form__check.c-form__check{
+	margin: 42px auto 0px auto;
+}
+
+.contact__page__apply__form__check input[type="checkbox"] {
+	margin: 0px;
+}
+
+.contact__page__apply__form__check > .c-apply-sendBtn{
+	width: 100%;
+}
+
+.contact__page__apply__form__check.c-form__sendBtn{
+	max-width: 297px;
+}
+
+.wpcf7-not-valid-tip{
+	font-size: 0.7em;
+	line-height: 1;
+}
+
+.download__form__content.first{
+	margin-top: 13px;
 }
 
 }
