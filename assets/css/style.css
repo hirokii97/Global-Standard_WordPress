@@ -379,7 +379,7 @@ a {
 
 .c-sidebar-category-tag {
 	font-size: 12px;
-	padding: 2px 0px;
+	padding: 3px 0px;
 	width: 72px;
 }
 
@@ -390,6 +390,7 @@ a {
 .c-form__content {
 	font-weight: 700;
 	margin-top: 32px;
+	position: relative;
 }
 
 .c-form__content__textarea {
@@ -407,7 +408,7 @@ a {
 	border: #DDDDDD 1px solid;
 	border-radius: 4px;
 	height: 44px;
-	margin-top: 13px;
+	margin-top: 12px;
 	width: 100%;
 }
 
@@ -501,7 +502,9 @@ textarea::placeholder {
 .wpcf7-select option:nth-child(n + 2){
 	color: black;
 } */
-
+.contact__form__content.first{
+margin-top: 56px;
+}
 
 .c-form__content__requiredTag {
 	background-color: #D33365;
@@ -511,7 +514,10 @@ textarea::placeholder {
 	font-size: 12px;
 	height: 20px;
 	line-height: 17px;
-	padding: 3.5px 8px 3.5px 8px;
+	/* padding: 3.5px 8px 3.5px 8px; */
+	padding: 0px 8px 0.5px 8px;
+	position: absolute;
+	top: 4px;
 }
 
 .c-form__check {
@@ -520,13 +526,13 @@ textarea::placeholder {
 	display: flex;
 	justify-content: center;
 	/* justify-content: space-between; */
-	margin: 30px auto 0px auto;
+	margin: 35px auto 0px auto;
 	/* max-width: 300px; */
 	width: 100%;
 }
 
 .contact__page__apply__form__check.c-form__check{
-	margin: 34px auto 0px auto;
+	margin: 36px auto 0px auto;
 }
 
 .contact__page__apply__form__check > .c-apply-sendBtn{
@@ -2680,18 +2686,29 @@ header-top修正
 	font-size: 32px;
 }
 
-.download__form__content:nth-child(1) {
-	margin-top: 40px;
+.download__form__content{
+	margin-top: 31px;
+}
+
+.download__page__apply__form__check.c-form__check{
+	margin: 41px auto 0px auto;
+}
+
+.download__form__content.first {
+	margin-top: 35px;
 }
 
 .download__form__content__tag__requiredTag {
 	margin-left: 9px;
-	line-height: 20px;
+	height: 20px;
+	font-size: 12px;
 }
 
 .download__page__apply__form__check.c-form__check__detail{
 font-weight: 700;
 }
+
+
 
 /* ========================
 送信後メッセージ
@@ -2766,7 +2783,6 @@ header-top修正
 .contact__page__apply__form__title {
 	font-size: 24px;
 	text-align: center;
-	padding-bottom: 20px;
 }
 
 .contact__form__content.c-form__content{
