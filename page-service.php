@@ -132,7 +132,7 @@
               <?php if($query->have_posts()):  ?> 
               <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-              <div class="service__flow-box">
+              <div class="service__flow-box service__flow-box-step<?php echo $query->current_post+1 ?>">
                 <div class="service__flow-stepBox step<?php echo $query->current_post+1 ?>">
                   <div class="stepBox-step c-english-title">STEP</div>
                   <div class="stepBox step-number c-english-title"><?php the_content(); ?>
@@ -157,7 +157,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="service__flow-spArrow">
+                  <div class="service__flow-spArrow service__flow-spArrow-step<?php echo $query->current_post+1 ?>">
                     <div class="service__flow-spArrow-first step<?php echo $query->current_post+1 ?>"></div>
                     <div class="service__flow-spArrow-second step<?php echo $query->current_post+1 ?>"></div>
                   </div>

@@ -200,7 +200,7 @@ a {
 	border: #D33365 1px solid;
 	color: #D33365;
 	display: inline-block;
-	padding: 8px 24px;
+	padding: 3px 19px;
 	/* height: 36px; */
 }
 
@@ -210,7 +210,7 @@ a {
 }
 
 .c-post-card-title {
-	margin-top: 8px;
+	margin-top: 17px;
 }
 
 
@@ -988,7 +988,7 @@ about
 }
 
 .about__background {
-	background: url(../img/bg-case.png) right top / 500px 800px no-repeat ;
+	background: url(../img/bg-case.png) right top / 39% 84% no-repeat ;
 	position: relative;
 }
 
@@ -1045,7 +1045,7 @@ service
 ======================== */
 
 .service {
-	padding-bottom: 114px;
+	padding-bottom: 102px;
 	padding-top: 121px;
 }
 
@@ -1278,8 +1278,11 @@ MISSION VISION
 ======================== */
 
 .about-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-company_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-company_pc.png) no-repeat bottom center/ auto 250px;
 }
+
+
+
 
 .p-header__top__subtitle {
 	font-size: 20px;
@@ -1544,6 +1547,7 @@ header-main
 	font-weight: 700;
 	margin-top: 80px;
 	text-align: center;
+	line-height: 1.42;
 }
 
 .service__main__page {
@@ -1561,21 +1565,21 @@ header-main
 .service__main__section:nth-child(1) {
 	background: url(../img/img-service-detail01.png) no-repeat right bottom/560px 896px;
 	margin-left: 90px;
-	padding: 57px 0px 77px 0px;
+	padding: 68px 0px 77px 0px;
 }
 
 .service__main__section:nth-child(2) {
 	background: url(../img/img-service-detail02.png) no-repeat left bottom/560px 896px;
 	margin: 210px auto 0px auto;
 	margin-right: 90px;
-	padding: 57px 0px 77px 0px;
+	padding: 50px 0px 77px 0px;
 }
 
 .service__main__section:nth-child(3) {
 	background: url(../img/img-service-detail03.png) no-repeat right bottom/560px 896px;
 	margin: 217px auto 0px auto;
 	margin-left: 90px;
-	padding: 57px 0px 77px 0px;
+	padding: 50px 0px 77px 0px;
 }
 
 .service__main__section:nth-child(1) > .service__section__card::after {
@@ -1678,7 +1682,7 @@ padding-bottom: 40px;
 
 .service__flow-wrapper {
 	margin: 0 auto;
-	max-width: 1117px;
+	max-width: 1120px;
 	padding: 80px 10px 120px 10px;
 	width: 100%;
 }
@@ -1692,12 +1696,21 @@ padding-bottom: 40px;
 .service__flow-boxes {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 60px;
+	margin-top: 56px;
 }
 
 .service__flow-box {
 	max-width: 295px;
 	width: 100%;
+}
+
+.service__flow-box-step1{
+	max-width: 295px;
+}
+
+.service__flow-box-step4{
+	max-width: 250px;
+	
 }
 
 .service__flow-stepBox {
@@ -1742,12 +1755,19 @@ padding-bottom: 40px;
 }
 
 .contents-step1{
-	padding: 46px 25px 46px 42px;
+	max-width: 270px;
+	width: 100%;
+	padding: 46px 0px 46px 22px;
 	box-sizing: border-box;
+}
+
+.contents-step2{
+	padding: 46px 25px 46px 39px;
 }
 
 
 .contents-step4{
+	max-width: 250px;
 	padding: 46px 0px 46px 0px;
 }
 
@@ -1806,6 +1826,7 @@ padding-bottom: 40px;
 .service__flow-content-sentence {
 	font-size: 14px;
 	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .service__flow-content-sentence span {
@@ -1818,12 +1839,17 @@ padding-bottom: 40px;
 .service__flow-spArrow {
 	height: 209px;
 	width: 25px;
+	flex-grow: 1;
 	/* padding-left: 25px; */
 }
 
 .service__flow-spArrow-first {
 	height: 50%;
 	width: 100%;
+}
+
+.service__flow-spArrow-step4{
+display: none;
 }
 
 .service__flow-spArrow-first.step1 {
@@ -4130,7 +4156,7 @@ font-size: 14px;
 }
 
 .download__page .wpcf7-form{
-height: 390px;
+height: auto;
 }
 
 .download__page__apply__form__afterSend__title{
@@ -4156,6 +4182,13 @@ margin-top: 16px;
 height: 20px;
 }
 
+.c-post-card-tag {
+	border: #D33365 1px solid;
+	color: #D33365;
+	display: inline-block;
+	padding: 3px 19px;
+	/* height: 36px; */
+}
 
 }
 
