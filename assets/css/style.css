@@ -483,7 +483,11 @@ textarea::placeholder {
 	appearance: none;
 }
 
-.wpcf7-select select:invalid {
+/* .c-form__content__box__select select:invalid {
+	color: #CCCCCC;
+} */
+
+.is-empty {
 	color: #CCCCCC;
 }
 
@@ -491,17 +495,7 @@ textarea::placeholder {
 	/* color: black; */
 }
 
-/* .wpcf7-select.is-empty{
-	color: #CCCCCC;
-}
 
-.wpcf7-select option:first-child{
-	color: #CCCCCC;
-}
-
-.wpcf7-select option:nth-child(n + 2){
-	color: black;
-} */
 .contact__form__content.first{
 margin-top: 56px;
 }

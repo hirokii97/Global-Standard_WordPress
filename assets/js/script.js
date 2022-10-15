@@ -109,27 +109,14 @@ jQuery(".service__question-card").on("click", function(){
 // });
 
 
-//selectが requiredじゃない場合はjQueryを使う↓
-
-// <select class="is-empty"></select>としておく
-// jQuery(function(jQuery){
-//   const Target = jQuery('.is-empty');
-//   jQuery(Target).on('change', function(){
-//     if (jQuery(Target).val() !== "選択してください"){
-//       jQuery(this).removeClass('is-empty');
-//     } else {
-//       jQuery(this).addClass('is-empty');
-//     }
-//   });
-// });
-
-jQuery(function($){
-  const Target = $('.is-empty');
-  $(Target).on('change', function(){
-    if ($(Target).val() !== ""){
-      $(this).removeClass('is-empty');
+// {/* <select class="is-empty"></select>としておく */}
+jQuery(function(jQuery){
+  const Target = jQuery('.is-empty');
+  jQuery(Target).on('change', function(){
+    if (jQuery(Target).val() !== "選択してください"){
+      jQuery(this).removeClass('is-empty');
     } else {
-      $(this).addClass('is-empty');
+      jQuery(this).addClass('is-empty');
     }
   });
 });
