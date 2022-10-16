@@ -1287,7 +1287,7 @@ MISSION VISION
 ======================== */
 
 .about-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-company_pc.png) no-repeat bottom center/ auto 250px;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_pc.png) no-repeat bottom center / auto 250px;
 }
 
 
@@ -1523,7 +1523,7 @@ header-top修正
 ======================== */
 
 .service-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-service_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-service_pc.png) no-repeat center/cover;
 }
 
 .p-header__service__subtitle {
@@ -2011,7 +2011,7 @@ header-top修正
 ======================== */
 
 .news-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-news_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-news_pc.png) no-repeat center/cover;
 }
 
 .news__page {
@@ -2408,7 +2408,7 @@ header-top修正
 ======================== */
 
 .caseStudy-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-company_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_case_pc.png) no-repeat bottom center / auto 250px;
 }
 
 /* ========================
@@ -2603,7 +2603,7 @@ header-top修正
 ======================== */
 
 .download-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px, url(../img/mv-download_pc.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-download_pc.png) no-repeat center/cover;
 }
 
 .download__page {
@@ -3417,7 +3417,7 @@ margin-top: 39px;
 }
 
 .about-top {
-	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-company_sp.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_sp.png) no-repeat center/cover;
 }
 
 .p-header__top__subtitle {
@@ -3514,7 +3514,7 @@ margin-top: 39px;
 }
 
 .service-top {
-	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-service_sp.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-service_sp.png) no-repeat center/cover;
 }
 
 .p-header__service__subtitle {
@@ -3799,7 +3799,7 @@ align-items: baseline;
 }
 
 .news-top {
-	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-news_sp.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-news_sp.png) no-repeat center/cover;
 }
 
 .news__wrapper{
@@ -4098,7 +4098,7 @@ margin-bottom: 60px;
 }
 
 .download-top {
-	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-download_sp.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-download_sp.png) no-repeat center/cover;
 }
 
 .download__page {
@@ -4117,7 +4117,7 @@ margin-bottom: 60px;
 }
 
 .contact-top {
-	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px, url(../img/mv-contact_sp.png) no-repeat center/cover;
+	background: url(../img/lower-mv-decoration_sp.png) no-repeat left/165px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-contact_sp.png) no-repeat center/cover;
 }
 
 .contact__page {
@@ -4276,6 +4276,14 @@ height: 20px;
 
 .download__form__content.first{
 	margin-top: 13px;
+}
+
+.head-mission {
+	background: url(../img/img-company01_sp.png) no-repeat center center/cover;
+}
+
+.head-vision {
+	background: url(../img/img-company02_sp.png) no-repeat center center/cover;
 }
 
 }
