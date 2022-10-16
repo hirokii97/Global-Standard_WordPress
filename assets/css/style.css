@@ -2557,17 +2557,17 @@ padding-bottom: 77px;
 }
 
 .caseStudy__page__content__card__item-titleMark {
-	height: 20px;
+	height: 15.52px;
 	position: relative;
-	width: 20px;
+	width: 15.52px;
 }
 
 .caseStudy__page__content__card__item-titleMark img {
-	height: 20px;
+	height: 15.52px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 20px;
+	width: 15.52px;
 }
 
 .caseStudy__page__content__card__item-titleName {
@@ -3971,6 +3971,7 @@ align-items: baseline;
 
 .caseStudy__page{
 	padding: 0 20px;
+	margin-bottom: 5px;
 }
 
 .caseStudy__page__tab {
@@ -3992,7 +3993,7 @@ align-items: baseline;
 
 .caseStudy__page__content {
 	margin-bottom: 100px;
-	margin-top: 60px;
+	margin-top: 62px;
 }
 
 .caseStudy__page__content__title {
@@ -4008,7 +4009,7 @@ align-items: baseline;
 
 .caseStudy__page__content__card__item-titleName{
 	font-size: 16px;
-	margin-left: 5px;
+	/* margin-left: 5px; */
 	height: 24px;
 }
 
@@ -4026,8 +4027,8 @@ align-items: baseline;
 }
 
 .caseStudy__page__content__card__item-sentence{
-	line-height: 1.68;
-	margin-top: 10px;
+	line-height: 1.71;
+	margin-top: 8px;
 }
 
 .caseStudy__page__btn-box{
@@ -4090,6 +4091,7 @@ margin-bottom: 60px;
 
 .caseStudy__page__content__card__detail {
 	padding: 20px;
+	padding: 22px 20px 20px 20px;
 }
 
 .caseStudy__page__btn {
@@ -4284,6 +4286,14 @@ height: 20px;
 
 .head-vision {
 	background: url(../img/img-company02_sp.png) no-repeat center center/cover;
+}
+
+.caseStudy__page__content__card__course{
+	padding-bottom: 8px;
+}
+
+.caseStudy__page__content__card__course-item.courseName{
+	font-size: 15px;
 }
 
 }
