@@ -1287,7 +1287,7 @@ MISSION VISION
 ======================== */
 
 .about-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_pc.png) no-repeat bottom center / auto 250px;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_pc.png) no-repeat bottom center / cover;
 }
 
 
@@ -2408,7 +2408,7 @@ header-top修正
 ======================== */
 
 .caseStudy-top {
-	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_case_pc.png) no-repeat bottom center / auto 250px;
+	background: url(../img/lower-mv-decoration_pc.png) no-repeat left/365px,linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url(../img/mv-company_case_pc.png) no-repeat bottom center / cover;
 }
 
 /* ========================
@@ -4295,6 +4295,74 @@ height: 20px;
 .caseStudy__page__content__card__course-item.courseName{
 	font-size: 15px;
 }
+}
+
+@media screen and (max-width: 320px){
+	.c-form__check__detail {
+			font-size: 13px;
+	}
+
+	.c-form__check__sentence{
+		font-size: 12px;
+	}
+
+	.c-form__check__detail{
+		margin-left: 5px;
+	}
+
+	.service__card-title{
+		font-size: 24px;
+	}
+
+	.p-top__message-subtitle{
+		font-size: 14px;
+	}
 
 }
 
+/* 320px付近での崩れ防止 */
+@media screen and (max-width: 371px){
+	.about__company-tag{
+		width: 80px;
+	}
+
+	.about__company__contents{
+		background-image: linear-gradient(90deg, #163F74 0px 80px, #E8EAEC 80px);
+	}
+	
+	.about__company-cardContents{
+		font-size: 11px;
+
+	}
+	
+	.about__company-card{
+		background-image: linear-gradient(90deg, #163F74 0px 80px, #E8EAEC 80px);
+	}
+
+	.caseStudy__page__content__mainTitle{
+		font-size: 18px;
+	}
+	
+	.caseStudy__page__content__card__course {
+		font-size: 12px;
+	}
+	
+	.caseStudy__page__content__card__course-item.courseName{
+		font-size: 12px;
+		
+	}
+	
+	.caseStudy__page__content__card__header{
+		font-size: 10px;
+	}
+
+	.news__content__bar__new{
+		font-size: 5px;
+	}
+	
+	.news__content__bar__date{
+		font-size: 5px;
+
+	}
+
+}

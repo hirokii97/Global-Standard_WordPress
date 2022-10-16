@@ -188,7 +188,7 @@
               <?php if(has_post_thumbnail()){
                 the_post_thumbnail('large');
               } else {
-                echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="画像データがない場合に記載する画像">';
               }
               ?>
             </div>
@@ -225,7 +225,7 @@
                   the_field( 'twitter');
                 }
                 ?>">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-twitter.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-twitter.png" alt="Twitterのロゴ">
                 </a>
 
                 <a class="member-sns facebook" href=<?php  
@@ -233,7 +233,7 @@
                   the_field( 'facebook');
                 }
                 ?>>
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-facebook.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-facebook.png" alt="Facebookのロゴ">
                 </a>
 
                 <a class="member-sns instagram" href=<?php  
@@ -241,7 +241,7 @@
                   the_field( 'instagram');
                 }
                 ?>>
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-instagram.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-instagram.png" alt="Instagramのロゴ">
                 </a>
               </div>
             </div>

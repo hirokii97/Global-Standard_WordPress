@@ -51,12 +51,12 @@
           </div>
           <div class="about__contents"> 
             <div class="about__sentence">急速に広がったグローバル社会に対応できる人材を育成することで、文化・言語の垣根を越えたコミュニケーションを活発にし、一人でも多くの人が豊かに暮らせる世界を実現することを使命とする。<br><br>コミュニケーションスキル習得をサポートすることで一人でも多くのビジネスパーソンの視野を広げ、世界を舞台に新しい相乗効果を生む未来を創造する。<br><br> 文化の垣根を越えた人と人とのつながりが新しい価値を生むことを信念とする。</div>
-            <div class="about__contents-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-company.png" alt=""></div>
+            <div class="about__contents-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-company.png" alt="ビジネスパーソンらで議論しているシーン"></div>
           </div>
         </div>
       </div>
       <div class="about__sub-content"> 
-        <div class="about__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-company.png" alt=""></div>
+        <div class="about__img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-company.png" alt="ビジネスパーソンらで議論しているシーン"></div>
         <div class="l-view-more-box">
           <div class="l-view-more-sp c-view-more"><a class="c-view-more-link" href="<?php echo home_url('/about'); ?>">
               <div class="c-view-more-sentence-type1 c-english-title">View more</div>
@@ -83,15 +83,15 @@
           <div class="service__contents"> 
             <div class="service__cards service-cards-inner">
               <div class="service__card">
-                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number01.png" alt=""></div>
-                <div class="service__card-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service01.png" alt="">
+                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number01.png" alt="サービスの番号を示す「１」のラベル"></div>
+                <div class="service__card-img"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service01.png" alt="ビジネス英語研修の受講イメージ">
                   <div class="service__card-title c-title-type2">ビジネス英語研修</div>
                 </div>
                 <div class="service__card-sentence">ビジネス英会話はこれからの時代、すべてのビジネスパーソンが学ぶべき必須スキルと考えおります。海外にビジネス展開する際にはもちろんのこと、日本国内でも英会話コミュニケーションができることによってチャンスが掴める場面があります。</div>
               </div>
               <div class="service__card">
-                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number02.png" alt=""></div>
-                <div class="service__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service02.png" alt="">
+                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number02.png" alt="サービスの番号を示す「2」のラベル"></div>
+                <div class="service__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service02.png" alt="異文化コミュニケーション研修のイメージ">
                   <div class="service__card-title"> 
                     <div class="service__card-title-item c-title-type2">異文化<br></div>
                     <div class="service__card-title-item c-title-type2">コミュニケーション研修</div>
@@ -100,8 +100,8 @@
                 <div class="service__card-sentence">急速にグローバル化が進んでおり、ビジネスの場面に限らず様々な文化的背景を持つ者同士の交流はもはや日常的な光景となりました。<br> 言語や文化が異なる相手を理解することで世界が広がり、新たなビジネスチャンスに巡り会うことは少なくありません。</div>
               </div>
               <div class="service__card">
-                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number03.png" alt=""></div>
-                <div class="service__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service03.png" alt="">
+                <div class="service__card-number"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/number03.png" alt="サービスの番号を示す「3」のラベル"></div>
+                <div class="service__card-img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-service03.png" alt="ビジネス留学サポートプログラムの受講イメージ">
                   <div class="service__card-title">
                     <div class="service__card-title-item c-title-type2">ビジネス留学<br></div>
                     <div class="service__card-title-item c-title-type2">サポートプログラム</div>
@@ -158,7 +158,7 @@
                   <?php if(has_post_thumbnail()){
                     the_post_thumbnail('small');
                   } else {
-                    echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                    echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="画像データがない場合に記載する画像">';
                   } ?> 
                 </div>
 
