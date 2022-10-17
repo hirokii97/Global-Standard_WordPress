@@ -1116,6 +1116,8 @@ padding: 0 32px 0px 0px;
 
 .service__card-img {
 	position: relative;
+	max-width: 320px;
+	margin: 0 auto;
 }
 
 .service__card-title {
@@ -2152,7 +2154,7 @@ header-top修正
 .sidebar {
 	margin-top: 80px;
 	padding-left: 10px;
-	width: 310px;
+	max-width: 310px;
 }
 
 .sidebar-titile{
@@ -2180,7 +2182,7 @@ font-size: 20px;
 
 .newPost__page__content__about {
 	margin-left: 10px;
-	width: 190px;
+	max-width: calc(100% - 110px);
 }
 
 .newPost__content__bar__date {
@@ -3337,6 +3339,9 @@ margin-top: 39px;
 .service__card {
 	padding-left: 15px;
 	width: 100%;
+	max-width: 375px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .service__card:nth-child(1) {
@@ -3895,8 +3900,10 @@ align-items: baseline;
 }
 
 .sidebar {
+	margin-top: 40px;
 	padding-left: 0px;
 	width: 100%;
+	max-width: 768px;
 }
 
 .newPost__page__content {
@@ -3914,7 +3921,7 @@ align-items: baseline;
 }
 
 .newPost__page__content__about {
-	max-width: calc(100% - 132px);
+	/* max-width: calc(100% - 132px); */
 	width: 100%;
 }
 
