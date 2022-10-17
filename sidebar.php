@@ -1,4 +1,4 @@
-<sidebar class="sidebar"><div class="sidebar-titile">新着記事</div>
+<div class="sidebar"><div class="sidebar-titile">新着記事</div>
 
         <div class="newPost__page__wrapper">
 
@@ -68,4 +68,4 @@
           <?php endforeach; ?>
             
         </div>
-      </sidebar>
+              </div>
